@@ -1,7 +1,11 @@
-function HowDoWeMakeSenseOfItAll() {
-  return (<div>
+import SectionTitle from "../SectionTitle";
 
-  </div>)
+function HowDoWeMakeSenseOfItAll() {
+  return (
+  <div className="h-screen">
+    <SectionTitle title='How Do We Make Sense Of It all'/>
+  </div>
+  )
 }
 
 export default HowDoWeMakeSenseOfItAll

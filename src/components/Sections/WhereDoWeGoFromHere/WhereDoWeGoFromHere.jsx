@@ -1,8 +1,9 @@
 import SectionTitle from "../SectionTitle";
 
 function WhereDoWeGoFromHere() {
-  return(<div>
-    <SectionTitle title='Where Are We'/>
+  return(
+  <div className="h-screen">
+    <SectionTitle title='Where Do We Go From Here'/>
   </div>)
 }
 export default WhereDoWeGoFromHere

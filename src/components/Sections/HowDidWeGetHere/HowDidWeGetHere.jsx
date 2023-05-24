@@ -1,4 +1,5 @@
 import SectionTitle from "../SectionTitle";
+
 function HowDidWeGetHere() {
   return(
   <div className="h-screen">
