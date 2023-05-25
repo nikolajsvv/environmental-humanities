@@ -5,7 +5,9 @@ import HowDidWeGetHere from './components/Sections/HowDidWeGetHere/HowDidWeGetHe
 import WhereAreWe from './components/Sections/WhereAreWe/WhereAreWe'
 import WhereDoWeGoFromHere from './components/Sections/WhereDoWeGoFromHere/WhereDoWeGoFromHere'
 import HowDoWeMakeSenseOfItAll from './components/Sections/HowDoWeMakeSenseOfItAll/HowDoWeMakeSenseOfItAll'
-function App() {
+// import Header from './components/Header/Header'
+
+const App = () => {
   return (
     <>
     <NavBar/>

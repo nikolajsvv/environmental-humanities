@@ -1,6 +1,6 @@
 import SectionTitle from "../SectionTitle";
 
-function HowDoWeMakeSenseOfItAll() {
+const HowDoWeMakeSenseOfItAll = () => {
   return (
   <div className="h-screen">
     <SectionTitle title='How Do We Make Sense Of It all'/>
