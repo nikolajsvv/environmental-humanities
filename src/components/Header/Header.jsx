@@ -1,8 +1,11 @@
 const Header = () => {
   return(
-    <div className='bg-primary-green text-xl'>
+    <>
+    <div className='hidden bg-primary-green text-xl'>
       Changing Planet
     </div>
+    <div className="md:hidden"></div>
+    </>
   )
 }
 
