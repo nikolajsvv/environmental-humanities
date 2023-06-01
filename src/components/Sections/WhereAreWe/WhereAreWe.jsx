@@ -1,9 +1,10 @@
 import SectionTitle from "../SectionTitle";
 
+
 const WhereAreWe = () => {
   return(
-  <div className="h-screen">
-    <SectionTitle title='Where Are We'/>
+  <div id='where-are-we' className="h-screen">
+    <SectionTitle title='Where Are We' />
   </div>)
 }
 

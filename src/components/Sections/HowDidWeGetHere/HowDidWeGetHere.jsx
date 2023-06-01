@@ -1,8 +1,9 @@
 import SectionTitle from "../SectionTitle";
 
 const HowDidWeGetHere = () => {
+  
   return(
-  <div className="h-screen">
+  <div id="how-did-we-get-here" className="h-screen">
     <SectionTitle title='How Did We Get Here'/>
   </div>)
 }

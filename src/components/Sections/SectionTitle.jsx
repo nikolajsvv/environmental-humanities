@@ -1,7 +1,9 @@
 // Default introduction for each of the 4 sections, not including the welcome section
 import PropTypes from 'prop-types';
 import TreeBranch from '../../assets/cartoon-branch.png'
+
 function SectionTitle({title}) {
+
   return (
   <div className='relative flex flex-col items-center'>
     <div className='absolute top-1/2 transform -translate-y-1/2 p-3 shadow-md bg-primary-bg min-w-fit max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl overflow-auto whitespace-normal z-10'>
