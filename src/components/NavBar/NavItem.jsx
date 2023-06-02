@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from "react-scroll";
 
 const NavItem = ({ section }) => {
   const { title, id } = section;
@@ -6,7 +7,15 @@ const NavItem = ({ section }) => {
   return (
     <>
     <div className={`border-r border-black border-opacity-75 md:flex-1 text-center`}>
-      <a href={id} >{title}</a>
+      <Link
+        activeClass='active'
+        to={id.replace('#', '')}
+        spy={true}
+        smooth={true}
+        duration={300}
+        className='cursor-pointer'>
+      {title}
+      </Link>
     </div>
     </>
   );
