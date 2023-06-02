@@ -15,7 +15,7 @@ const Menu = ({setIsOpen}) => {
       <ul className="flex flex-col gap-10 p-[15px] text-white font-bold text-[30px] uppercase font-source-sans-pro cursor-pointer">
         {sections.map((section) => {
           return(
-            <li key={section.id} className="block transition ease-in-out hover:text-[31px] duration-300">
+            <li key={section.id} className="block transition ease-in-out hover:text-[31px] duration-300 hover:text-primary-orange">
               <Link
                 activeClass='active'
                 to={section.id.replace('#', '')}
