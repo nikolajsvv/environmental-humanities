@@ -1,7 +1,6 @@
 // Default introduction for each of the 4 sections, not including the welcome section
 import PropTypes from 'prop-types';
 import TreeBranch from '../../assets/cartoon-branch.png'
-
 function SectionTitle({title}) {
 
   return (
