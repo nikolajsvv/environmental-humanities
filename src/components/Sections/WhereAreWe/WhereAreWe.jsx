@@ -7,10 +7,11 @@ import image1 from '../../../assets/philip-jahn-r_rnWGV64Ac-unsplash.jpg'
 import image2 from '../../../assets/raphael-giesbrecht-_7UbqOUgBzo-unsplash.jpg'
 
 const WhereAreWe = () => {
+
   return(
-  <div id='where-are-we' >
+  <div id='where-are-we' >  
     <SectionTitle title='Where Are We' />
-    <div className="h-screen px-8 mx-auto xl:px-5 max-w-screen-lg py-5 lg:py-8">
+    <div className="min-h-screen px-8 mx-auto xl:px-5 max-w-screen-lg py-5 lg:py-8">
       <div className="grid gap-10 md:grid-cols-2 lg:gap-10">
         <EssayPreview essay={essay1} image={image1}/>
         <EssayPreview essay={essay2} image={image1}/>
