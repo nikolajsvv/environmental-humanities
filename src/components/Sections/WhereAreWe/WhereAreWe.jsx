@@ -7,6 +7,8 @@ import image1 from '../../../assets/philip-jahn-r_rnWGV64Ac-unsplash.jpg'
 import image2 from '../../../assets/raphael-giesbrecht-_7UbqOUgBzo-unsplash.jpg'
 
 const WhereAreWe = () => {
+
+
   return(
   <div id='where-are-we' >
     <SectionTitle title='Where Are We' />
