@@ -11,6 +11,7 @@ export default {
       },
       fontFamily: {
         "source-sans-pro": ["Source Sans Pro", "sans-serif"],
+        "source-serif-pro": ["Source Serif Pro", "sans-serif"],
       },
     },
   },

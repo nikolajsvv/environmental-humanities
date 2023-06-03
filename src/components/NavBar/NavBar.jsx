@@ -33,7 +33,7 @@ const NavBar = () => {
       </nav>
 
       <div ref={scope} className='lg:hidden'>
-        <Menu setIsOpen={setIsOpen}/>
+        <Menu setIsOpen={setIsOpen} sections={sections}/>
         <MenuToggle toggle={() => setIsOpen(!isOpen)}/>
       </div>
  

@@ -6,13 +6,13 @@ function SectionTitle({title}) {
 
   return (
   <div className='relative flex flex-col items-center'>
-    <div className='absolute top-1/2 transform -translate-y-1/2 p-3 shadow-md bg-primary-bg min-w-fit max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl overflow-auto whitespace-normal z-10'>
-      <div className='text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-primary-orange font-source-sans-pro text-center'>
+    <div className='absolute top-1/2 transform -translate-y-1/2 p-3 mt-5 shadow-lg bg-primary-bg min-w-fit max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl overflow-auto whitespace-normal z-10'>
+      <div className='text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-primary-orange font-source-sans-pro text-center'>
         {title.toUpperCase()}
       </div>  
     </div>
     <div className='mt-4'>
-      <img src={TreeBranch} alt='Tree branch' className='w-auto h-auto'/>
+      <img src={TreeBranch} alt='Tree branch' className='w-auto h-auto opacity-50'/>
     </div>
   </div>
   )

@@ -10,10 +10,12 @@ const App = () => {
   return (
     <>
     <NavBar/>
-    <WhereAreWe />
-    <HowDidWeGetHere />
-    <WhereDoWeGoFromHere />
-    <HowDoWeMakeSenseOfItAll />
+    <div>
+      <WhereAreWe />
+      <HowDidWeGetHere />
+      <WhereDoWeGoFromHere />
+      <HowDoWeMakeSenseOfItAll />
+    </div>
     </>
   )
 }
