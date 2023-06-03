@@ -38,7 +38,7 @@ const MenuToggle = ({ toggle }) => {
         </svg>
       </motion.button>
       {!isHovered && (
-        <span className='hidden md:inline text-white uppercase font-source-sans-pro font-bold text-2xl transition-opacity duration-500'>
+        <span className='hidden lg:inline text-white uppercase font-source-sans-pro font-bold text-2xl transition-opacity duration-500'>
           Changing Planet
         </span>
       )}
