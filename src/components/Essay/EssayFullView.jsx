@@ -18,8 +18,8 @@ const EssayFullView = ({essay, onClose}) => {
   };
 
   return (
-    <div className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 pt-10 backdrop-blur-sm overlay' onClick={handleOverlayClick}>
-      <div className="w-11/12 bg-primary-bg overflow-auto max-h-screen rounded-2xl relative pt-5">
+    <div className='cursor-pointer fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 pt-10 backdrop-blur-sm overlay' onClick={handleOverlayClick}>
+      <div className="cursor-default w-11/12 bg-primary-bg overflow-auto max-h-screen rounded-2xl relative pt-5">
         <button className="absolute top-0 right-0 m-5 p-2 cursor-pointer" onClick={onClose}><XCircleIcon className='h-10 w-10 text-primary-orange'/></button>
         <div className="p-10">
           <h2 className='text-lg sm:text-2xl pt-2 font-bold font-source-sans-pro uppercase'>{essay.title}</h2>
