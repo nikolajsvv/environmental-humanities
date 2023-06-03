@@ -10,7 +10,7 @@ const WhereDoWeGoFromHere = () => {
   return(
   <div id='where-do-we-go-from-here'>
     <SectionTitle title='Where Do We Go From Here' />
-    <div  className="h-screen px-8 mx-auto xl:px-5 max-w-screen-lg py-5 lg:py-8">
+    <div  className="min-h-screen px-8 mx-auto xl:px-5 max-w-screen-lg py-5 lg:py-8">
       <div className="grid gap-10 md:grid-cols-2 lg:gap-10">
         <EssayPreview essay={essay1} image={image1}/>
         <EssayPreview essay={essay2} image={image1}/>
