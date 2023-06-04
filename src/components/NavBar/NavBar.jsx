@@ -20,7 +20,7 @@ const NavBar = () => {
   return (
     <>
       {/* <motion.div style={{ scaleX: scrollYProgress }} className='absolute top-0 left-0 right-0 h-10 z-10 bg-primary-green transform origin-left'/> */}
-      <div ref={scope} className=''>
+      <div ref={scope} className='initial'>
         <Menu setIsOpen={setIsOpen} sections={sections}/>
         <MenuToggle toggle={() => setIsOpen(!isOpen)}/>
       </div>
