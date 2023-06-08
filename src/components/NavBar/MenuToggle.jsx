@@ -39,7 +39,7 @@ const MenuToggle = ({ toggle }) => {
       </motion.button>
       {!isHovered && (
         <span className='hidden lg:inline text-white uppercase font-source-sans-pro font-bold text-2xl transition-opacity duration-500'>
-          Changing Planet
+          Finding Our Place on a changing planet
         </span>
       )}
     </div>

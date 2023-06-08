@@ -31,7 +31,7 @@ const EssayPreview = ({essay, image}) => {
           </span>
         </h2>
         <p className='text-left font-light font-souce-sans-pro text-sm text-primary-orange'>{author}</p>
-        <p className='py-2 font-light font-source-serif-pro'>{content.substring(0,200)}...</p>
+        <p className='py-2 font-light font-source-serif-pro'>{content.substring(0,150)}...</p>
       </div>
     </motion.div>
     
