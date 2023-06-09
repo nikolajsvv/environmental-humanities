@@ -38,9 +38,7 @@ const EssayPreview3 = ({ essay, image }) => {
   }, []);
 
   return (
-    <>
-    
-    
+    <>    
     <div className='group relative max-w-full max-h-full' ref={divRef}>
       <div className='absolute inset-0 bg-black opacity-50 rounded-2xl' />
       <img src={image} alt='image' className='object-contain w-full rounded-2xl' />

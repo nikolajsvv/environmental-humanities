@@ -2,6 +2,7 @@ import SectionTitle from "../SectionTitle"
 import EssayPreview2 from "../../Essay/EssayPreview2"
 import EssayPreview3 from "../../Essay/EssayPreview3"
 import AudioView from "../../Audio/AudioView"
+import AudioView2 from "../../Audio/AudioView2"
 import essay1 from '../../../assets/Submissions/WhereAreWe/Essay/gerlipatriciafrances_233799_10474396_Freewrite.json'
 import essay2 from '../../../assets/Submissions/WhereAreWe/Essay/greenmayahelena_253590_10473645_BIO184Assignment.json'
 import essay3 from '../../../assets/Submissions/WhereAreWe/Essay/chaseleaharima_216978_10472745_dreaming of huckleberry.json'
@@ -19,6 +20,7 @@ const WhereAreWe = () => {
           <EssayPreview3 essay={essay3} image={image2}/>
           <EssayPreview3 essay={essay3} image={image2}/>
           <EssayPreview3 essay={essay3} image={image2}/>
+          <AudioView2 audio={audio} audioData={audioData} image={image2}/>
       </div>
     </div>
   </div>
