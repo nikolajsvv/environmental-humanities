@@ -96,11 +96,11 @@ const AudioView = ({ audio, audioData }) => {
         <audio src={audio} ref={audioPlayerRef} />
       </div>
       <div
-        className="relative w-full h-2 bg-gray-300"
+        className="group relative w-full h-2 transition-all duration-300 group-hover:h-5"
         ref={progressBarRef}
         onClick={handleProgressBarClick}
       >
-        <motion.div className="h-2 bg-primary-green" style={{ width: `${(currentTime / duration) * 100}%` }}></motion.div>
+        <motion.div className="h-2 bg-primary-green group-hover:h-4 transition-all duration-300" style={{ width: `${(currentTime / duration) * 100}%` }}></motion.div>
       </div>
       <div className="flex w-full font-extralight text-[11px] -translate-y-6 justify-between">
         <div className="pl-2">{formatTime(currentTime)}</div>
@@ -110,17 +110,7 @@ const AudioView = ({ audio, audioData }) => {
   );
 };
 
-AudioView.propTypes = {
-  audio: PropTypes.string,
-  audioData: PropTypes.shape({
-    title: PropTypes.string,
-    author: PropTypes.string,
-    type: PropTypes.string,
-  }),
-};
-
 export default AudioView;
-
 
 AudioView.propTypes = {
   audio: PropTypes.string,
