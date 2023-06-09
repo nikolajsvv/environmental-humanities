@@ -3,6 +3,7 @@ import useMenuAnimation from './useMenuAnimation'
 import MenuToggle from './MenuToggle'
 import Menu from './Menu'
 import { useState } from 'react'
+import { motion, useScroll } from 'framer-motion'
 
 const NavBar = () => {
 
@@ -13,14 +14,14 @@ const NavBar = () => {
     { title: 'where do we go from here', id: '#where-do-we-go-from-here' },
   ];
 
-  // const { scrollYProgress } = useScroll();
+  const { scrollYProgress } = useScroll();
   const [isOpen, setIsOpen] = useState(false);
   const scope = useMenuAnimation(isOpen);
 
   return (
     <>
-      {/* <motion.div style={{ scaleX: scrollYProgress }} className='absolute top-0 left-0 right-0 h-10 z-10 bg-primary-green transform origin-left'/> */}
-      <div ref={scope} className=''>
+      <motion.div style={{ scaleX: scrollYProgress }} className='fixed bottom-0 left-0 right-0 h-1 z-10 bg-primary-green transform origin-left'/>
+      <div ref={scope} className='initial'>
         <Menu setIsOpen={setIsOpen} sections={sections}/>
         <MenuToggle toggle={() => setIsOpen(!isOpen)}/>
       </div>

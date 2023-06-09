@@ -1,7 +1,7 @@
 import EssayFullView from './EssayFullView'
 import PropTypes from 'prop-types'
 import { useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 
 const EssayPreview = ({essay, image}) => {
 
@@ -31,16 +31,25 @@ const EssayPreview = ({essay, image}) => {
           </span>
         </h2>
         <p className='text-left font-light font-souce-sans-pro text-sm text-primary-orange'>{author}</p>
-        <p className='py-2 font-light font-source-serif-pro'>{content.substring(0,200)}...</p>
+        <p className='py-2 font-light font-source-serif-pro'>{content.substring(0,150)}...</p>
       </div>
     </motion.div>
     
+    <AnimatePresence>
     {showFullView && (
-      <EssayFullView
-        essay={essay}
-        onClose={() => setShowFullView(false)}
-      />
+      <motion.div
+        key='modal'
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        exit={{opacity: 0}}
+        className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 pt-10 backdrop-blur-sm overlay'>
+        <EssayFullView
+          essay={essay}
+          onClose={() => setShowFullView(false)}
+        />
+      </motion.div>
     )}
+    </AnimatePresence>
     </>
   )
 }
