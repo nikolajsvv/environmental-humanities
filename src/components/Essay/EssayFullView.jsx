@@ -14,7 +14,7 @@ const EssayFullView = ({ essay, onClose }) => {
 
   return (
     <>
-      <motion.div className="hidden sm:inline cursor-default w-8/12 bg-primary-bg overflow-auto h-3/4 rounded-2xl relative pt-5 items-center ">
+      <motion.div className="hidden sm:inline cursor-default w-8/12 bg-primary-bg overflow-auto h-3/4 rounded-2xl relative pt-5 items-center" >
         <button className="absolute top-0 right-10 m-5 p-2 cursor-pointer" onClick={onClose}>
           <XMarkIcon className='fixed h-10 w-10 text-primary-green' />
         </button>

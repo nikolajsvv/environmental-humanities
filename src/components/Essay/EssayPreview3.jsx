@@ -13,7 +13,7 @@ const EssayPreview3 = ({ essay, image }) => {
   const [showFullView, setShowFullView] = useState(false);
 
   const handleViewClick = () => {
-    setShowFullView(true)
+    setShowFullView(!showFullView)
   }
 
   useEffect(() => {
@@ -43,7 +43,7 @@ const EssayPreview3 = ({ essay, image }) => {
       <div className='absolute inset-0 bg-black opacity-50 rounded-2xl' />
       <img src={image} alt='image' className='object-contain w-full rounded-2xl' />
       <div className='absolute top-0 left-0 p-4 text-white'>
-        <DocumentTextIcon className='h-6 w-6 md:h-8 md:w-8' />
+        <DocumentTextIcon className='h-6 w-6 md:h-8 md:w-8 group-hover:scale-110' />
       </div>
       <div className='absolute inset-0 flex flex-col items-left justify-end text-white p-5'>
         <h2 className='pt-2 text-left text-2xl uppercase font-souce-sans-pro font-bold'>
@@ -55,7 +55,7 @@ const EssayPreview3 = ({ essay, image }) => {
         <p className='py-2 font-extralight font-source-serif-pro text-sm lg:text-base'>
           {content.length <= maxContentLength ? content : content.substring(0, maxContentLength) + '...'}
         </p>
-        <p className='text-right cursor-pointer' onClick={handleViewClick}>Read More</p>
+        <p className='text-right cursor-pointer font-extralight hover:font-normal hover:text-primary-orange' onClick={handleViewClick}>Read More</p>
       </div>
     </div>
 
@@ -66,7 +66,7 @@ const EssayPreview3 = ({ essay, image }) => {
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         exit={{opacity: 0}}
-        className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 pt-10 backdrop-blur-sm overlay'>
+        className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 pt-10 backdrop-blur-sm overlay' >
         <EssayFullView
           essay={essay}
           onClose={() => setShowFullView(false)}

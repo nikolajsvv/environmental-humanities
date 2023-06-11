@@ -76,7 +76,8 @@ const AudioView2 = ({ audio, audioData, image }) => {
       <div className='absolute inset-0 bg-black opacity-50 rounded-2xl' />
       <img src={image} alt='image' className='object-contain w-full rounded-2xl' />
       <div className='absolute top-0 left-0 p-4 text-white'>
-        <SpeakerWaveIcon className='h-6 w-6 md:h-8 md:w-8' />
+        {isPlaying ?<SpeakerWaveIcon className='h-6 w-6 md:h-8 md:w-8 animate-pulse' /> : <SpeakerWaveIcon className='h-6 w-6 md:h-8 md:w-8 group-hover:scale-110' /> }
+
       </div>
       <div className='absolute inset-0 flex flex-col items-center justify-center text-white p-5'>
         <h2 className='uppercase font-source-sans-pro font-bold text-4xl'>{title}</h2>
@@ -102,7 +103,7 @@ const AudioView2 = ({ audio, audioData, image }) => {
           <div className='text-right right-0 pr-2'>{formatTime(duration)}</div>
         </div>
       </div>
-      <div className='absolute bottom-0 left-0 w-full h-4 overflow-hidden rounded-b-3xl' ref={progressBarRef} onClick={handleProgressBarClick}>
+      <div className='absolute bottom-0 left-0 w-full h-4 overflow-hidden rounded-b-3xl cursor-pointer' ref={progressBarRef} onClick={handleProgressBarClick}>
         <div className='bg-gray-100 h-full rounded-b-3xl'>
           <motion.div className='h-full bg-primary-green' style={{ width: `${(currentTime / duration) * 100}%` }}></motion.div>
         </div>
@@ -110,15 +111,6 @@ const AudioView2 = ({ audio, audioData, image }) => {
     </div>
   )
 }
-
-{/* <div
-className="translate-y-32 w-full h-2 transition-all duration-300 bg-gray-100"
-ref={progressBarRef}
-onClick={handleProgressBarClick}
->
-<motion.div className="h-2 bg-primary-green" style={{ width: `${(currentTime / duration) * 100}%` }}></motion.div>
-</div> */}
-
 export default AudioView2
 
 AudioView2.propTypes = {
