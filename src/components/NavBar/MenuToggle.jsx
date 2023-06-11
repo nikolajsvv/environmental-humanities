@@ -1,18 +1,14 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Path from './Path'
 import PropTypes from 'prop-types';
 
 const MenuToggle = ({ toggle }) => {
-  const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className='fixed flex items-center justify-start gap-4 top-8 left-3 z-50'>
+    <div className='fixed flex items-center justify-start gap-4 top-3 left-3 z-50'>
       <motion.button
         onClick={toggle}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        className='p-5 bg-primary-green cursor-pointer rounded-2xl'
+        className='p-3 bg-primary-green cursor-pointer rounded-2xl'
         whileHover={{ scale: 1.2 }}
       >
         <svg width="23" height="18" viewBox="0 0 23 18">
@@ -37,11 +33,10 @@ const MenuToggle = ({ toggle }) => {
           />
         </svg>
       </motion.button>
-      {!isHovered && (
-        <span className='hidden lg:inline text-white uppercase font-source-sans-pro font-bold text-2xl transition-opacity duration-500'>
-          chaning planet
+      <span className='hidden lg:inline text-[#005051] uppercase font-source-sans-pro font-bold text-2xl transition-opacity duration-500'>
+          changing planet
         </span>
-      )}
+
     </div>
   );
 }

@@ -25,7 +25,7 @@ const EssayPreview3 = ({ essay, image }) => {
       } else if (divWidth > 600) {
         setMaxContentLength(200);
       } else {
-        setMaxContentLength(150);
+        setMaxContentLength(100);
       }
     };
 
@@ -46,7 +46,7 @@ const EssayPreview3 = ({ essay, image }) => {
         <DocumentTextIcon className='h-6 w-6 md:h-8 md:w-8 group-hover:scale-110' />
       </div>
       <div className='absolute inset-0 flex flex-col items-left justify-end text-white p-5'>
-        <h2 className='pt-2 text-left text-2xl uppercase font-souce-sans-pro font-bold'>
+        <h2 className='pt-2 text-left text-lg sm:text-2xl uppercase font-souce-sans-pro font-bold'>
           <span className='bg-gradient-to-r from-green-300 to-green-200 bg-[length:0px_5px] bg-left-bottom bg-no-repeat duration-500 hover:bg-[length:100%_10px] group-hover:bg-[length:100%_8px]'>
             {title}
           </span>
@@ -55,7 +55,7 @@ const EssayPreview3 = ({ essay, image }) => {
         <p className='py-2 font-extralight font-source-serif-pro text-sm lg:text-base'>
           {content.length <= maxContentLength ? content : content.substring(0, maxContentLength) + '...'}
         </p>
-        <p className='text-right cursor-pointer font-extralight hover:font-normal hover:text-primary-orange' onClick={handleViewClick}>Read More</p>
+        <p className='text-sm sm:text-base text-right cursor-pointer font-extralight hover:font-normal hover:text-primary-orange' onClick={handleViewClick}>Read More</p>
       </div>
     </div>
 
