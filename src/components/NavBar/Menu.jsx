@@ -1,9 +1,6 @@
 import PropTypes from 'prop-types';
 import { Link } from "react-scroll";
 
-// ToDo:
-// Look at Variatns in Examples page - https://www.framer.com/motion/examples/
-// Implement framer motion for the hover
 const Menu = ({setIsOpen, sections}) => {
   return (
     <nav className="fixed top-0 left-0 bottom-0 w-[400px] z-50 bg-primary-green pt-[100px] will-change-transform duration-300">
