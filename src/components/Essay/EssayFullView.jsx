@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useEffect } from 'react';
-import { motion } from 'framer-motion';
 import { XMarkIcon, ArrowLeftIcon } from '@heroicons/react/24/solid';
+import { motion } from 'framer-motion';
 
 const EssayFullView = ({ content, onClose }) => {
 

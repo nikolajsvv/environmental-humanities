@@ -24,6 +24,8 @@ const EssayComponent = ({ content, backgroundImage }) => {
         setMaxBodyLength(400);
       } else if (divWidth > 600) {
         setMaxBodyLength(200);
+      } else if (divWidth > 400) {
+        setMaxBodyLength(150)
       } else {
         setMaxBodyLength(100);
       }
