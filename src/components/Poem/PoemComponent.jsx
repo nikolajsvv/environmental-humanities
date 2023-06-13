@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const PoemComponent = ({ content, backgroundImage }) => {
 
-  const { title, author, body, description } = content;
+  const { title, author, body } = content;
 
   const [ showFullView, setShowFullView ] = useState(false);
 
@@ -28,7 +28,7 @@ const PoemComponent = ({ content, backgroundImage }) => {
           <h2 className='text-2xl font-source-sans-pro font-bold uppercase lg:text-4xl'>{title}</h2>
           <p className='text-md font-source-sans pb-1 lg:text-lg lg:pb-5'>{author}</p>
           <p className="text-sm font-source-serif-pro font-light text-center overflow-auto md:text-md lg:text-lg" dangerouslySetInnerHTML={{ __html: body.replace(/\n/g, '<br/>')}}></p>
-          <p className='text-md font-source-sans-pro pt-5 text-center hover:text-primary-orange cursor-pointer lg:text-lg' onClick={handleViewClick}>Description</p>
+          <p className='text-md font-source-sans-pro pt-5 font-semibold cursor-pointer lg:text-lg hover:text-primary-orange hover:font-bold' onClick={handleViewClick}>Description</p>
         </div>
       </div>
       <AnimatePresence>

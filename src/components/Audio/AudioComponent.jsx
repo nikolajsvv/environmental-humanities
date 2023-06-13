@@ -104,8 +104,8 @@ const AudioComponent = ({ audioFile, content, backgroundImage  }) => {
         </div>
       </div>
       <div className='absolute bottom-0 left-0 w-full h-4 overflow-hidden rounded-b-3xl cursor-pointer' ref={progressBarRef} onClick={handleProgressBarClick}>
-        <div className='bg-gray-100 h-full rounded-b-3xl'>
-          <motion.div className='h-full bg-primary-green' style={{ width: `${(currentTime / duration) * 100}%` }}></motion.div>
+        <div className='bg-primary-green h-full rounded-b-3xl'>
+          <motion.div className='h-full bg-primary-orange' style={{ width: `${(currentTime / duration) * 100}%` }}></motion.div>
         </div>
       </div>
     </div>
