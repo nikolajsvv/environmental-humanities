@@ -14,7 +14,6 @@ const NavBar = () => {
     { title: 'where do we go from here', id: 'where-do-we-go-from-here' },
   ];
 
-
   const { scrollYProgress } = useScroll();
   const [isOpen, setIsOpen] = useState(false);
   const scope = useMenuAnimation(isOpen);
@@ -28,7 +27,7 @@ const NavBar = () => {
           setCurrentSection(entry.target.id);
         }
       });
-    }, { threshold: 0.6 });
+    }, { threshold: 0.1 });
 
     sections.forEach(section => {
       const element = document.getElementById(section.id);

@@ -5,17 +5,21 @@ function SectionTitle({title}) {
   const [isVisible, setIsVisible] = useState(true);
   const titleRef = useRef();
 
+  console.log('test'); // Moved the console.log here
+
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 1} // adjust the threshold according to when you want the title to start fading out
+      { threshold: 0.1} // adjust the threshold according to when you want the title to start fading out
     );
 
     if (titleRef.current) {
       observer.observe(titleRef.current);
     }
+
 
     return () => {
       if (titleRef.current) {
