@@ -18,7 +18,7 @@ const ImageFullView = ({ content, image, onClose}) => {
     <>
       <motion.div className='hidden sm:inline cursor-default w-full h-full overflow-auto relative items-center' onClick={e => e.stopPropagation()}>
         <button className='absolute top-0 right-0 p-4 cursor-pointer' onClick={onClose}>
-          <XMarkIcon className='h-10 w-10 hover:text-primary-orange bg-white bg-opacity-20 rounded-full hover:bg-opacity-10'/>
+          <XMarkIcon className='h-10 w-10 bg-gray-100 rounded-full hover:text-primary-orange hover:bg-opacity-50'/>
         </button>
         <img src={image} alt={title} className='object-contain w-full h-full'/>
       </motion.div>

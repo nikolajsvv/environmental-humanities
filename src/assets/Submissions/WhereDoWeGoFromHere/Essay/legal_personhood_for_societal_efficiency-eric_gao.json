@@ -1,0 +1,11 @@
+{
+  "id": "",
+  "title": "Legal Personhood for Societal Efficiency",
+  "author": "Eric Gao",
+  "body": "Granting natural preserves legal personhood, while creating a system of laws that provides a streamlined process for activist groups or individuals in general to sue polluting corporations over environmental damages, would functionally accomplish an aligning of corporate incentives with societal ones. Absent such a legal change in the status quo, it could be corporations’ profit maximizing choice to pollute. For instance, suppose societal demand for a good is p = 10 - q  while a firm’s cost to produce a good is one per unit of good produced. However, now suppose that every unit of the good imposes a cost of seven to society in the form of environmental damages to a nearby lake. If the lake did not have personhood and there were no grounds for the corporation to be sued, the profit-maximizing quantity produced can be found by taking the first  order condition of the profit function profit(q) = pq-q = (10-q)q-q. The derivative of that with respect to q is 10-2q-1 = 9-2q; the profit-maximizing choice happens when q = 4.5. However, at this quantity, aggregate societal utility is the integral from q=0 to q=4.5 of 10-q minus 8q, which  comes out to be about -1.2. However, if we were able to punish the corporation for polluting and  force them to internalize the external societal cost of pollution, their new profit function would  be profit’(q) = pq-4q=(10-q)q-8q. The derivative of that with respect to q is 10-2q-8 = 2-2q; the profit-maximizing choice happens when q = 1. In this scenario, aggregate societal utility is the  integral from q=0 to q=1 of 10-q minus 8q, which comes out to be equal to 1.5. As such, forcing the firm to internalize its large negative externality brings societal welfare from the negative to the positive. Interestingly enough, such legal change is compatible without a complete reimagining of current economic systems: we use the free market and firms’ inherent want to maximize profits to induce societally optimal behavior.",
+  "description": "",
+  "type": "essay",
+  "category": "where do we go from here",
+  "image": "",
+  "url": "https://docs.google.com/document/d/18jCtow5NbokssdH-fiTlz3WhlaKVRP_72F-YK0bVr0A/edit?usp=sharing"
+}

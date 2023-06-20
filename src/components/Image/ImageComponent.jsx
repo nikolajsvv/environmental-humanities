@@ -21,8 +21,8 @@ const ImageComponent = ({ content, backgroundImage }) => {
         <motion.div style={{ backgroundImage: `url(${backgroundImage})` }} className='absolute inset-0 bg-no-repeat bg-center bg-cover rounded-2xl transform transition-transform duration-500 group-hover:scale-105'/>
         <div className='absolute inset-0 bg-black opacity-30 rounded-2xl group-hover:opacity-20 transition-opacity duration-500' />
 
-        <div className='absolute top-0 left-0 p-4 text-white flex items-center'>
-            <PhotoIcon className='h-6 w-6 md:h-8 md:w-8 group-hover:scale-110' />
+        <div className='absolute top-0 left-0 p-4 text-gray-400 flex items-center'>
+            <PhotoIcon className='h-6 w-6 md:h-8 md:w-8 group-hover:scale-110 group-hover:text-gray-300' />
         </div>
 
         <div className='absolute bottom-0 bg-white bg-opacity-40 w-full p-4 rounded-b-2xl flex flex-col space-y-2 overflow-y-auto' >

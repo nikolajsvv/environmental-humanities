@@ -20,14 +20,14 @@ const PoemComponent = ({ content, backgroundImage }) => {
         <motion.div style={{ backgroundImage: `url(${backgroundImage})` }} className='absolute inset-0 bg-no-repeat bg-center bg-cover rounded-2xl '/>
         <div className='absolute inset-0 bg-black opacity-30 rounded-2xl' />
 
-        <div className='absolute top-0 left-0 p-4 text-white flex items-center'>
-          <PencilIcon className='h-6 w-6 md:h-8 md:w-8 group-hover:scale-110' />
+        <div className='absolute top-0 left-0 p-4 text-gray-400 flex items-center'>
+          <PencilIcon className='h-6 w-6 md:h-8 md:w-8 group-hover:scale-110 group-hover:text-gray-300' />
         </div>
 
         <div className='absolute inset-0 items-center justify-center text-white p-5 flex flex-col'>
           <h2 className='text-2xl font-source-sans-pro font-bold uppercase lg:text-4xl'>{title}</h2>
           <p className='text-md font-source-sans pb-1 lg:text-lg lg:pb-5'>{author}</p>
-          <p className="text-sm font-source-serif-pro font-light text-center overflow-auto md:text-md lg:text-lg" dangerouslySetInnerHTML={{ __html: body.replace(/\n/g, '<br/>')}}></p>
+          <p className="text-sm font-source-serif-pro font-light text-center overflow-y-scroll md:text-md lg:text-lg w-full" dangerouslySetInnerHTML={{ __html: body.replace(/\n/g, '<br/>')}}></p>
           <p className='text-md font-source-sans-pro pt-5 font-semibold cursor-pointer lg:text-lg hover:text-primary-orange hover:font-bold' onClick={handleViewClick}>Description</p>
         </div>
       </div>
