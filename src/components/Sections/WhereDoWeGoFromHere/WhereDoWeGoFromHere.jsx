@@ -1,6 +1,8 @@
+import SectionTitle from "../SectionTitle"
 import EssayComponent from "../../Essay/EssayComponent"
 import PoemComponent from '../../Poem/PoemComponent'
 import IFrameComponent from "../../iFrame/IFrameComponent"
+import intro from '../../../assets/Submissions/WhereDoWeGoFromHere/intro.json'
 import essay1 from '../../../assets/Submissions/WhereDoWeGoFromHere/Essay/its_what_saved_the_world-aaryan_chirag_sukhadia.json'
 import essay2 from '../../../assets/Submissions/WhereDoWeGoFromHere/Essay/networks-abi_leigh_archer.json'
 import essay3 from '../../../assets/Submissions/WhereDoWeGoFromHere/Essay/the_environmental_law_enforcement_agency-alice_wang.json'
@@ -13,11 +15,12 @@ import iframe1 from '../../../assets/Submissions/WhereDoWeGoFromHere/iFrame/stan
 const WhereDoWeGoFromHere = () => {
   return(
   <div id='where-do-we-go-from-here' style={{marginBottom: '100px'}}>
+    <div className="px-8 mx-auto xl:px-5 max-w-screen-2xl py-3 lg:py-4">
+        <SectionTitle sectionContent={intro}/>
+      </div>
     <div className="min-h-screen px-8 mx-auto xl:px-5 max-w-screen-2xl py-3 lg:py-4">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <div className="lg:row-span-2 lg:col-span-2">
-          <IFrameComponent content={iframe1}/>
-        </div>
+        <IFrameComponent content={iframe1}/>
         <EssayComponent content={essay1}/>
         <EssayComponent content={essay2}/>
         <EssayComponent content={essay3}/>
