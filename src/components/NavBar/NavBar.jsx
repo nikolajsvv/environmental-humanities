@@ -1,4 +1,3 @@
-// import NavItem from './NavItem'
 import useMenuAnimation from './useMenuAnimation'
 import MenuToggle from './MenuToggle'
 import Menu from './Menu'
@@ -27,13 +26,13 @@ const NavBar = () => {
           setCurrentSection(entry.target.id);
         }
       });
-    }, { threshold: 0.1 });
-
+    });
+  
     sections.forEach(section => {
       const element = document.getElementById(section.id);
       if (element) observer.observe(element);
     });
-
+  
     return () => {
       sections.forEach(section => {
         const element = document.getElementById(section.id);

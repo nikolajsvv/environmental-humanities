@@ -1,0 +1,17 @@
+.line::after {
+  content: "";
+  position: absolute;
+  top: 50%; /* Center the arrow vertically */
+  right: 2px; /* Off-screen initially */
+  border: solid white;
+  border-width: 0 5px 5px 0; /* This line controls the size of the arrow */
+  display: inline-block;
+  padding: 5px; /* This line also controls the size of the arrow */
+  transform: translateY(-50%) rotate(-45deg); /* Center the arrow vertically and rotate it */
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.line:hover::after {
+  right: 0; /* Bring it back on screen on hover */
+}
