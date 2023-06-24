@@ -15,7 +15,7 @@ const IFrameComponent = ({content}) => {
 
   return (
     <>
-      <div className='group relative w-full pb-[75%] overflow-hidden'> 
+      <div className='group relative w-full pb-[75%] overflow-hidden rounded-2xl shadow-md shadow-mud'> 
         <motion.div style={{backgroundImage: `url(${image})`}} className='absolute inset-0 bg-no-repeat bg-center bg-cover rounded-2xl'/>
         <div className='absolute inset-0 bg-black opacity-50 rounded-2xl'/>
 
@@ -29,7 +29,7 @@ const IFrameComponent = ({content}) => {
               {title}
             </span>
           </h2>          
-          <p className='font-source-sans-pro font-normal text-primary-orange'>{author}</p>
+          <p className='font-source-sans-pro font-normal text-light-orange'>{author}</p>
           <p style={{lineHeight: '1.2', marginBottom: '1em'}}  className='text-sm font-source-serif-pro font-light overflow-y-scroll w-full text-left lg:text-md' dangerouslySetInnerHTML={{ __html: description.replace(/\n/g, '<br/>')}}></p>
           <div className='flex justify-between pt-3'>
             <a href={url} target='_blank' rel="noreferrer" >

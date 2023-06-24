@@ -33,8 +33,8 @@ const MenuToggle = ({ toggle }) => {
           />
         </svg>
       </motion.button>
-      <span className='hidden xl:inline text-dark-green uppercase font-source-sans-pro font-bold text-3xl transition-opacity duration-500'>
-        changing planet
+      <span className='hidden text-dark-green uppercase font-source-sans-pro font-bold text-xl transition-opacity duration-500'>
+        finding our place on a changing planet
       </span>
     </div>
   );

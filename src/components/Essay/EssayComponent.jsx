@@ -45,9 +45,9 @@ const EssayComponent = ({ content, backgroundImage }) => {
 
   return (
     <>
-      <div className='group relative w-full pb-[75%] overflow-hidden' ref={divRef}>
+      <div className='group relative w-full pb-[75%] overflow-hidden rounded-2xl shadow-md shadow-mud' ref={divRef}>
         <motion.div style={{ backgroundImage: `url(${backgroundImage})` }} className='absolute inset-0 bg-no-repeat bg-center bg-cover rounded-2xl'/>
-        <div className='absolute inset-0 bg-black opacity-50 rounded-2xl' />
+        <div className='absolute inset-0 bg-black opacity-50 rounded-2xl'/>
         <div className='absolute top-0 left-0 p-4 text-gray-400 flex items-center'>
           <DocumentTextIcon className='h-6 w-6 md:h-8 md:w-8 group-hover:scale-110 group-hover:text-gray-300' />
         </div>

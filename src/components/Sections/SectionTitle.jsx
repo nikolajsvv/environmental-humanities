@@ -6,7 +6,7 @@ const SectionTitle = ({ sectionContent }) => {
   const { title, content } = sectionContent;
 
   return (
-    <div className='group flex flex-col lg:flex-row justify-between items-start inset-0 bg-no-repeat bg-center bg-cover rounded-2xl overflow-hidden shadow-md shadow-dark-green' 
+    <div className='group flex flex-col lg:flex-row justify-between items-start inset-0 bg-no-repeat bg-center bg-cover rounded-2xl overflow-hidden shadow-md shadow-mud' 
     style={{backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(${image})`}}
   >
     <div className='flex flex-col items-start'>

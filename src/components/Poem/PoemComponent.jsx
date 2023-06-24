@@ -16,7 +16,7 @@ const PoemComponent = ({ content, backgroundImage }) => {
 
   return (
     <>
-      <div className="group relative w-full pb-[75%] overflow-hidden">
+      <div className="group relative w-full pb-[75%] overflow-hidden rounded-2xl shadow-md shadow-mud">
         <motion.div style={{ backgroundImage: `url(${backgroundImage})` }} className='absolute inset-0 bg-no-repeat bg-center bg-cover rounded-2xl '/>
         <div className='absolute inset-0 bg-black opacity-50 rounded-2xl' />
 
