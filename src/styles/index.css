@@ -4,5 +4,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-[#D5D5D4];
+  @apply bg-[#fefae7];
 }

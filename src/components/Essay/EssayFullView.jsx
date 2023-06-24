@@ -42,7 +42,7 @@ const EssayFullView = ({ content, onClose }) => {
 
   return (
     <>
-      <motion.div className="hidden md:inline cursor-default w-8/12 bg-primary-bg overflow-auto h-3/4 rounded-2xl relative pt-5 items-center" onClick={e => e.stopPropagation()}>
+      <motion.div className="hidden md:inline cursor-default w-8/12 bg-light-beige overflow-auto h-3/4 rounded-2xl relative pt-5 items-center" onClick={e => e.stopPropagation()}>
         <button className="absolute top-0 right-10 m-5 p-2 cursor-pointer" onClick={onClose}>
           <XMarkIcon className='fixed h-10 w-10 hover:text-primary-orange' />
         </button>
@@ -55,7 +55,7 @@ const EssayFullView = ({ content, onClose }) => {
         </div>
       </motion.div>
       
-      <motion.div className='md:hidden fixed top-0 left-0 w-screen h-screen bg-primary-bg overflow-auto'>
+      <motion.div className='md:hidden fixed top-0 left-0 w-screen h-screen bg-light-beige overflow-auto'>
         <button className='absolute top-0 left-0 p-5 cursor-pointer' onClick={onClose}>
           <ArrowLeftIcon className='fixed h-8 w-8'/>
         </button>

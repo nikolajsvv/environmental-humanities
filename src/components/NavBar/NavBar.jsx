@@ -45,14 +45,14 @@ const NavBar = () => {
 
   return (
     <>
-      <div ref={scope} className='flex fixed z-50 w-full bg-primary-bg h-16 justify-center items-center'>
+      <div ref={scope} className='flex fixed z-50 w-full bg-light-beige h-16 justify-center items-center'>
         <Menu setIsOpen={setIsOpen} sections={sections}/>
         <MenuToggle toggle={() => setIsOpen(!isOpen)}/>
-        <div className='text-center text-xl font-bold uppercase sm:text-2xl md:text-3xl lg:text-4xl'>
+        <div className='text-center text-xl text-dark-green font-bold uppercase sm:text-2xl md:text-3xl lg:text-4xl'>
           {currentSectionTitle}
         </div>
       </div>
-      <motion.div style={{ scaleX: scrollYProgress }} className='fixed bottom-0 left-0 right-0 h-1 z-10 bg-primary-green transform origin-left'/>
+      <motion.div style={{ scaleX: scrollYProgress }} className='fixed bottom-0 left-0 right-0 h-1 z-10 bg-dark-green transform origin-left'/>
 
     </>
   );
