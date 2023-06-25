@@ -26,6 +26,10 @@ const SectionTitle = ({ sectionContent }) => {
 export default SectionTitle
 
 SectionTitle.propTypes = {
-  sectionContent: PropTypes.string,
+  sectionContent: PropTypes.shape({
+    title: PropTypes.string,
+    content: PropTypes.string,
+    image: PropTypes.string
+  }),
   content: PropTypes.string
 }
