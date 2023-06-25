@@ -45,23 +45,23 @@ const EssayComponent = ({ content, backgroundImage }) => {
 
   return (
     <>
-      <div className='group relative w-full pb-[75%] overflow-hidden' ref={divRef}>
+      <div className='group relative w-full pb-[75%] overflow-hidden rounded-2xl shadow-md shadow-mud' ref={divRef}>
         <motion.div style={{ backgroundImage: `url(${backgroundImage})` }} className='absolute inset-0 bg-no-repeat bg-center bg-cover rounded-2xl'/>
-        <div className='absolute inset-0 bg-black opacity-50 rounded-2xl' />
+        <div className='absolute inset-0 bg-black opacity-50 rounded-2xl'/>
         <div className='absolute top-0 left-0 p-4 text-gray-400 flex items-center'>
           <DocumentTextIcon className='h-6 w-6 md:h-8 md:w-8 group-hover:scale-110 group-hover:text-gray-300' />
         </div>
-        <div className='absolute inset-0 items-left justify-end text-white p-5 flex flex-col'>
+        <div className='absolute inset-0 items-left justify-end text-light-beige p-5 flex flex-col'>
           <h2 className='pt-2 text-left text-lg sm:text-xl xl:text-2xl uppercase font-souce-sans-pro font-bold'>
             <span className='bg-gradient-to-r from-green-300 to-green-200 bg-[length:0px_5px] bg-left-bottom bg-no-repeat duration-500 hover:bg-[length:100%_10px] group-hover:bg-[length:100%_8px]'>
               {title}
             </span>
           </h2>
-          <p className='font-source-sans-pro font-normal text-primary-orange'>{author}</p>
+          <p className='font-source-sans-pro font-normal text-light-orange'>{author}</p>
           <p className='py-2 font-extralight font-source-serif-pro text-sm lg:text-base'
             dangerouslySetInnerHTML={{ __html: truncatedBody.replace(/\n/g, '<br/>')}}>
           </p>
-          <p className='text-base sm:text-md text-right cursor-pointer font-semibold hover:font-bold hover:text-primary-orange ' onClick={handleViewClick}>Read More</p>
+          <p className='text-base sm:text-md text-right cursor-pointer font-semibold hover:font-bold hover:text-light-orange ' onClick={handleViewClick}>Read More</p>
         </div>
       </div>
 

@@ -4,6 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
+        "dark-green": "#3a5134",
+        "light-orange": "#f3cc86",
+        "secondary-light-orange": "#f2bb7b",
+        "light-beige": "#fefae7",
+        mud: "#7e7d74",
         "primary-orange": "#E98300",
         "primary-bg": "#D5D5D4",
         "secondary-bg": "#D9D9D9",
