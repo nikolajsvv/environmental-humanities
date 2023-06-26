@@ -12,7 +12,7 @@ import poem1 from '../../../assets/Submissions/WhereAreWe/Poem/the_linden-divya_
 
 const WhereAreWe = () => {
   return(
-    <div id='where-are-we' style={{marginBottom: '100px'}} className="pt-14">
+    <section id='where-are-we' style={{marginBottom: '100px'}} className='pt-40'>
       <div className="px-8 mx-auto xl:px-5 max-w-screen-2xl py-3 lg:py-4">
         <SectionTitle sectionContent={introduction}/>
       </div>
@@ -29,7 +29,7 @@ const WhereAreWe = () => {
             </div>
           </div>  
       </div>
-    </div>
+    </section>
   )
 }
 

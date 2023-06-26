@@ -10,7 +10,7 @@ import poem2 from '../../../assets/Submissions/HowDidWeGetHere/Poem/i_am_as_loud
 
 const HowDidWeGetHere = () => {
   return(
-    <div id="how-did-we-get-here" style={{marginBottom: '100px'}} className="pt-14">
+    <section id="how-did-we-get-here" style={{marginBottom: '100px'}} className='pt-40'>
       <div className="px-8 mx-auto xl:px-5 max-w-screen-2xl py-3 lg:py-4">
         <SectionTitle sectionContent={intro}/>
       </div>
@@ -26,7 +26,7 @@ const HowDidWeGetHere = () => {
           </div>
         </div>  
       </div>
-    </div>
+    </section>
   )
 }
 export default HowDidWeGetHere;
