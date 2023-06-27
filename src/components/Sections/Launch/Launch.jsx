@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const Launch = () => {
+  
   const { ref, inView } = useInView({
     threshold: 0.1
   });
@@ -29,7 +30,6 @@ const Launch = () => {
           transition={{ duration: 1, delay: 1 }}>Stanford students exploring the roots of unsustainability – and imagining a better future</motion.h2>
       </motion.div>
       <p className='text-dark-green text-xs font-extralight absolute bottom-0 right-0 p-5'>This website showcases student perspectives from Stanford University&apos;s course: &quot;Environmental Humanities&quot;</p>
-
     </motion.section>
   )
 }
