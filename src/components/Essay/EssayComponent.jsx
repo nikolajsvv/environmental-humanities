@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import EssayFullView from './EssayFullView';
 import { useState, useEffect, useRef } from 'react';
 import { DocumentTextIcon } from '@heroicons/react/24/outline';
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion';
 
 const EssayComponent = ({ content, backgroundImage }) => {
   const { title, author, body } = content;
@@ -45,7 +45,12 @@ const EssayComponent = ({ content, backgroundImage }) => {
 
   return (
     <>
-      <div className='group relative w-full pb-[75%] overflow-hidden rounded-2xl shadow-md shadow-mud' ref={divRef}>
+      <motion.div className='group relative w-full pb-[75%] overflow-hidden rounded-2xl shadow-md shadow-mud' ref={divRef}
+        initial={{ opacity: 0}}
+        whileInView={{ opacity: 1}}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        >
         <motion.div style={{ backgroundImage: `url(${backgroundImage})` }} className='absolute inset-0 bg-no-repeat bg-center bg-cover rounded-2xl'/>
         <div className='absolute inset-0 bg-black opacity-50 rounded-2xl'/>
         <div className='absolute top-0 left-0 p-4 text-gray-400 flex items-center'>
@@ -63,7 +68,7 @@ const EssayComponent = ({ content, backgroundImage }) => {
           </p>
           <p className='text-base sm:text-md text-right cursor-pointer font-semibold hover:font-bold hover:text-light-orange ' onClick={handleViewClick}>Read More</p>
         </div>
-      </div>
+      </motion.div>
 
       <AnimatePresence>
         {showFullView && (

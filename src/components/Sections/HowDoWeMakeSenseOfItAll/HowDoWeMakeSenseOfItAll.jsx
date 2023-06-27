@@ -5,7 +5,7 @@ import poem1 from '../../../assets/Submissions/HowDoWeMakeSenseOfItAll/Poem/just
 
 const HowDoWeMakeSenseOfItAll = () => {
   return (
-    <div id='how-do-we-make-sense-of-it-all' style={{marginBottom: '100px'}}>
+    <section id='how-do-we-make-sense-of-it-all' style={{marginBottom: '100px'}} className='pt-40'>
       <div className="px-8 mx-auto xl:px-5 max-w-screen-2xl py-3 lg:py-4">
         <SectionTitle sectionContent={intro}/>
       </div>
@@ -16,7 +16,7 @@ const HowDoWeMakeSenseOfItAll = () => {
           </div>
         </div>  
       </div>
-    </div>
+    </section>
   )
 }
 

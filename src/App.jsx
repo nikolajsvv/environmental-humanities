@@ -8,16 +8,15 @@ import WhereDoWeGoFromHere from './components/Sections/WhereDoWeGoFromHere/Where
 import HowDoWeMakeSenseOfItAll from './components/Sections/HowDoWeMakeSenseOfItAll/HowDoWeMakeSenseOfItAll'
 
 const App = () => {
+  
   return (
     <>
     <NavBar/>
-    <div>
-      <Launch/>
-      <WhereAreWe />
-      <HowDidWeGetHere />
-      <WhereDoWeGoFromHere />
-      <HowDoWeMakeSenseOfItAll />
-    </div>
+    <Launch/>
+    <WhereAreWe />
+    <HowDidWeGetHere />
+    <WhereDoWeGoFromHere />
+    <HowDoWeMakeSenseOfItAll />
     </>
   )
 }

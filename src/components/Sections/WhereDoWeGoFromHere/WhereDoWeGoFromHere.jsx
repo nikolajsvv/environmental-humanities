@@ -14,7 +14,7 @@ import poem1 from '../../../assets/Submissions/WhereDoWeGoFromHere/Poem/this_ear
 import iframe1 from '../../../assets/Submissions/WhereDoWeGoFromHere/iFrame/stanford_tree_journal.json'
 const WhereDoWeGoFromHere = () => {
   return(
-  <div id='where-do-we-go-from-here' style={{marginBottom: '100px'}}>
+  <section id='where-do-we-go-from-here' style={{marginBottom: '100px'}} className='pt-40'>
     <div className="px-8 mx-auto xl:px-5 max-w-screen-2xl py-3 lg:py-4">
         <SectionTitle sectionContent={intro}/>
       </div>
@@ -33,7 +33,7 @@ const WhereDoWeGoFromHere = () => {
         </div>
       </div>
     </div>
-  </div>
+  </section>
   )
 }
 export default WhereDoWeGoFromHere
