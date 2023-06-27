@@ -16,7 +16,11 @@ const PoemComponent = ({ content, backgroundImage }) => {
 
   return (
     <>
-      <div className="group relative w-full pb-[75%] overflow-hidden rounded-2xl shadow-md shadow-mud">
+      <motion.div className="group relative w-full pb-[75%] overflow-hidden rounded-2xl shadow-md shadow-mud"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1}}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}>
         <motion.div style={{ backgroundImage: `url(${backgroundImage})` }} className='absolute inset-0 bg-no-repeat bg-center bg-cover rounded-2xl '/>
         <div className='absolute inset-0 bg-black opacity-50 rounded-2xl' />
 
@@ -30,7 +34,7 @@ const PoemComponent = ({ content, backgroundImage }) => {
           <p className="text-sm font-source-serif-pro font-light text-center overflow-y-scroll md:text-md lg:text-lg w-full" dangerouslySetInnerHTML={{ __html: body.replace(/\n/g, '<br/>')}}></p>
           <p className='text-md font-source-sans-pro pt-5 font-semibold cursor-pointer lg:text-lg hover:text-light-orange hover:font-bold' onClick={handleViewClick}>Description</p>
         </div>
-      </div>
+      </motion.div>
       <AnimatePresence>
         {showFullView && (
           <motion.div
