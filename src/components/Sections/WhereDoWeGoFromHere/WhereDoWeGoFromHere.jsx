@@ -36,13 +36,18 @@ import essay9 from '../../../assets/Submissions/WhereDoWeGoFromHere/Essay/the_re
 import essay10 from'../../../assets/Submissions/WhereDoWeGoFromHere/Essay/inside_vs_outside-kimberly_cheung.json'
 import essay11 from'../../../assets/Submissions/WhereDoWeGoFromHere/Essay/three_days_out_of_a_thousand-max_manson.json'
 import iframe2 from '../../../assets/Submissions/WhereDoWeGoFromHere/iFrame/sustainability_is_multifaceted-shuvi_jha.json'
+import { Helmet } from 'react-helmet';
 
 const WhereDoWeGoFromHere = () => {
   return(
   <section id='where-do-we-go-from-here' style={{marginBottom: '100px'}} className='pt-40'>
+    <Helmet>
+      <title>Changing Planet</title>
+      <meta name="description" content="Explore a variety of essays, poems, and interactive content focused on the future of sustainability. Discover fresh perspectives and innovative solutions from a diverse group of global authors." />
+    </Helmet>
     <div className="px-8 mx-auto xl:px-5 max-w-screen-2xl py-3 lg:py-4">
         <SectionTitle sectionContent={intro}/>
-      </div>
+    </div>
     <div className="min-h-screen px-8 mx-auto xl:px-5 max-w-screen-2xl py-3 lg:py-4">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <IFrameComponent content={iframe1} backgroundImage={backgroundImage1}/>

@@ -14,10 +14,15 @@ import image3 from '../../../assets/Images/HowDidWeGetHere/train_station.webp'
 import image4 from '../../../assets/Images/HowDidWeGetHere/countryside.webp'
 import image5 from '../../../assets/Images/HowDidWeGetHere/snail.webp'
 import image6 from '../../../assets/Images/HowDidWeGetHere/sun_through_trees.webp'
+import { Helmet } from 'react-helmet';
 
 const HowDidWeGetHere = () => {
   return(
     <section id="how-did-we-get-here" style={{marginBottom: '100px'}} className='pt-40'>
+      <Helmet>
+        <title>Changing Planet</title>
+        <meta name='description' content='Dive into the "How Did We Get Here" section to engage with thought-provoking essays and poems exploring the journey of civilization, personal identity, and the preservation of culture. Reflect on humanitys path through compelling narratives and inspiring imagery.'/>
+      </Helmet>
       <div className="px-8 mx-auto xl:px-5 max-w-screen-2xl py-3 lg:py-4">
         <SectionTitle sectionContent={intro}/>
       </div>
