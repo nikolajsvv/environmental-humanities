@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 import { useState, useEffect, useRef } from 'react';
 import { SpeakerWaveIcon } from '@heroicons/react/24/outline';
 import { PlayCircleIcon, PauseCircleIcon } from '@heroicons/react/24/solid';
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
+import AudioFullView from './AudioFullView';
 
 const AudioComponent = ({ audioFile, content, backgroundImage  }) => {
   const { title, author } = content;
@@ -15,6 +16,7 @@ const AudioComponent = ({ audioFile, content, backgroundImage  }) => {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [showFullView, setShowFullView] = useState(false);
 
   useEffect(() => {
     let audioPlayer = audioPlayerRef.current;
@@ -69,7 +71,12 @@ const AudioComponent = ({ audioFile, content, backgroundImage  }) => {
     audioPlayerRef.current.currentTime = seekTime;
   };
 
+  const handleViewClick = () => {
+    setShowFullView(!showFullView);
+  };
+
   return (
+    <>
     <motion.div className='group relative w-full pb-[75%] overflow-hidden rounded-2xl shadow-md shadow-mud'
       initial={{ opacity: 0}}
         whileInView={{ opacity: 1}}
@@ -103,6 +110,7 @@ const AudioComponent = ({ audioFile, content, backgroundImage  }) => {
             />
           )}
         </div>
+        <p className='cursor-pointer p-4 font-extralight hover:font-normal hover:text-light-orange' onClick={handleViewClick}>Transcript</p>
         <div className='flex justify-between w-full absolute bottom-4 font-extralight'>
           <div className='text-left left-0 pl-2'>{formatTime(currentTime)}</div>
           <div className='text-right right-0 pr-2'>{formatTime(duration)}</div>
@@ -114,6 +122,19 @@ const AudioComponent = ({ audioFile, content, backgroundImage  }) => {
         </div>
       </div>
     </motion.div>
+    <AnimatePresence>
+        {showFullView && (
+          <motion.div
+            key='modal'
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}
+            className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 pt-10 backdrop-blur-sm overlay' onClick={() => setShowFullView}>
+            <AudioFullView content={content} onClose={() => setShowFullView(false)}/>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
   )
 }
 

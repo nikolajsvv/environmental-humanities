@@ -35,6 +35,9 @@ const WhereDoWeGoFromHere = () => {
         <EssayComponent content={essay3}/>
         <EssayComponent content={essay4}/>
         <EssayComponent content={essay5}/>
+        <div className="lg:row-span-2 lg:col-span-2">
+          <PoemComponent content={poem1} />
+        </div>
         <EssayComponent content={essay6}/>
         <EssayComponent content={essay7}/>
         <EssayComponent content={{ body: 'When I feel overwhelmed contemplating issues in life, especially the environment, I self soothe by keeping my hands busy. This is the sweater that’s been keeping me sane for the last several weeks, and I am very proud of how it turned out.', title: 'Keeping my hands busy', author: 'Jessica Sydney Fairlie', url: pdfDocument2}} />
@@ -44,9 +47,6 @@ const WhereDoWeGoFromHere = () => {
         <EssayComponent content={essay11}/>
         <IFrameComponent2 content={iframe2}/>
         <EssayComponent content={{ body: 'A true cost accounting board game to redefine capitalism for the benefit of the environment', title: 'Capitalverse', author: 'Abi Leigh Archer', url: pdfDocument1}} />
-        <div className="lg:row-span-2 lg:col-span-2">
-          <PoemComponent content={poem1} />
-        </div>
       </div>
     </div>
   </section>
