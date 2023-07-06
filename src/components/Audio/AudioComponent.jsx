@@ -70,19 +70,24 @@ const AudioComponent = ({ audioFile, content, backgroundImage  }) => {
   };
 
   return (
-    <div className='group relative w-full pb-[75%] overflow-hidden'>
+    <motion.div className='group relative w-full pb-[75%] overflow-hidden rounded-2xl shadow-md shadow-mud'
+      initial={{ opacity: 0}}
+        whileInView={{ opacity: 1}}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
       <audio src={audioFile} ref={audioPlayerRef}/>
 
       <motion.div style={{ backgroundImage: `url(${backgroundImage})` }} className='absolute inset-0 bg-no-repeat bg-center bg-cover rounded-2xl'/>
-      <div className='absolute inset-0 bg-black opacity-50 rounded-2xl' />
+      <div className='absolute inset-0 bg-black opacity-50 rounded-2xl'/>
 
-      <div className='absolute top-0 left-0 p-4 text-white flex items-center'>
-        {isPlaying ?<SpeakerWaveIcon className='h-6 w-6 md:h-8 md:w-8 animate-pulse' /> : <SpeakerWaveIcon className='h-6 w-6 md:h-8 md:w-8 group-hover:scale-110' /> }
+      <div className='absolute top-0 left-0 p-4 text-gray-400 flex items-center'>
+        {isPlaying ?<SpeakerWaveIcon className='h-6 w-6 md:h-8 md:w-8 animate-pulse text-gray-300' /> : <SpeakerWaveIcon className='h-6 w-6 md:h-8 md:w-8 group-hover:scale-110 group-hover:text-gray-300' /> }
       </div>
 
-      <div className='absolute inset-0 items-center justify-center text-white p-5 flex flex-col space-y-2 overflow-y-auto'>
-        <h2 className='uppercase font-source-sans-pro font-bold text-4xl'>{title}</h2>
-        <p>{author}</p>
+      <div className='absolute inset-0 items-center justify-center text-light-beige p-5 flex flex-col space-y-2 overflow-y-auto'>
+        <h2 className='uppercase font-source-sans-pro font-bold text-4xl text-center'>{title}</h2>
+        <p className='text-light-orange'>{author}</p>
         <div>
           {!isPlaying ? (
             <PlayCircleIcon
@@ -104,11 +109,11 @@ const AudioComponent = ({ audioFile, content, backgroundImage  }) => {
         </div>
       </div>
       <div className='absolute bottom-0 left-0 w-full h-4 overflow-hidden rounded-b-3xl cursor-pointer' ref={progressBarRef} onClick={handleProgressBarClick}>
-        <div className='bg-primary-green h-full rounded-b-3xl'>
-          <motion.div className='h-full bg-primary-orange' style={{ width: `${(currentTime / duration) * 100}%` }}></motion.div>
+        <div className='h-full bg-dark-green rounded-b-3xl'>
+          <motion.div className='h-full bg-light-orange' style={{ width: `${(currentTime / duration) * 100}%` }}></motion.div>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
