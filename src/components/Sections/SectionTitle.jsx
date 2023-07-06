@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import image from '../../assets/raphael-giesbrecht-_7UbqOUgBzo-unsplash.jpg'
+import image from '../../assets/Images/sectionTitleImage.webp'
 import '../../styles/SectionTitle.css'
 import { motion } from 'framer-motion';
 

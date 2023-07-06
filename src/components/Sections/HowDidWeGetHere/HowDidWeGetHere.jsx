@@ -8,12 +8,12 @@ import essay3 from '../../../assets/Submissions/HowDidWeGetHere/Essay/preserving
 import pdfDocument1 from '../../../assets/Submissions/HowDidWeGetHere/Essay/decivilization-shreya_garg.pdf'
 import poem1 from '../../../assets/Submissions/HowDidWeGetHere/Poem/the_home_we_carry-julia_claire_dicicco.json'
 import poem2 from '../../../assets/Submissions/HowDidWeGetHere/Poem/i_am_as_loud_as_you_can_hear_me-mahie_wilhelm.json'
-import image1 from '../../../assets/Images/HowDidWeGetHere/american_dream.jpg'
-import image2 from '../../../assets/Images/HowDidWeGetHere/farm.jpg'
-import image3 from '../../../assets/Images/HowDidWeGetHere/train_station.jpg'
-import image4 from '../../../assets/Images/HowDidWeGetHere/countryside.jpg'
-import image5 from '../../../assets/Images/HowDidWeGetHere/snail.jpg'
-import image6 from '../../../assets/Images/HowDidWeGetHere/sun_through_trees.jpg'
+import image1 from '../../../assets/Images/HowDidWeGetHere/american_dream.webp'
+import image2 from '../../../assets/Images/HowDidWeGetHere/farm.webp'
+import image3 from '../../../assets/Images/HowDidWeGetHere/train_station.webp'
+import image4 from '../../../assets/Images/HowDidWeGetHere/countryside.webp'
+import image5 from '../../../assets/Images/HowDidWeGetHere/snail.webp'
+import image6 from '../../../assets/Images/HowDidWeGetHere/sun_through_trees.webp'
 
 const HowDidWeGetHere = () => {
   return(
