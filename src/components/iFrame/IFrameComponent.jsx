@@ -4,9 +4,9 @@ import { useState } from 'react'
 import { GlobeAltIcon } from '@heroicons/react/24/outline'
 import { motion, AnimatePresence } from 'framer-motion'
 
-const IFrameComponent = ({content}) => {
+const IFrameComponent = ({content, backgroundImage}) => {
 
-  const { title, image, author, description, url } = content;
+  const { title, author, description, url } = content;
   const [ showFullView, setShowFullView ] = useState(false);
 
   const handleViewClick = () => {
@@ -15,8 +15,11 @@ const IFrameComponent = ({content}) => {
 
   return (
     <>
-      <div className='group relative w-full pb-[75%] overflow-hidden rounded-2xl shadow-md shadow-mud'> 
-        <motion.div style={{backgroundImage: `url(${image})`}} className='absolute inset-0 bg-no-repeat bg-center bg-cover rounded-2xl'/>
+      <motion.div className='group relative w-full pb-[75%] overflow-hidden rounded-2xl shadow-md shadow-mud' initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1}}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}> 
+        <motion.div style={{backgroundImage: `url(${backgroundImage})`}} className='absolute inset-0 bg-no-repeat bg-center bg-cover rounded-2xl'/>
         <div className='absolute inset-0 bg-black opacity-50 rounded-2xl'/>
 
         <div className='absolute top-0 left-0 p-4 text-gray-400 flex items-center'>
@@ -38,7 +41,7 @@ const IFrameComponent = ({content}) => {
             <p className='text-base text-right cursor-pointer font-semibold hover:font-bold hover:text-primary-orange sm:text-md md:text-lg' onClick={handleViewClick}>View</p>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <AnimatePresence>
         {showFullView && (
