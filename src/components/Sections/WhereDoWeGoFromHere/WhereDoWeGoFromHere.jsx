@@ -33,8 +33,8 @@ import iframe1 from '../../../assets/Submissions/WhereDoWeGoFromHere/iFrame/stan
 import essay7 from '../../../assets/Submissions/WhereDoWeGoFromHere/Essay/promoting_the_value_of_tikkun_olam-jason_bloom.json'
 import essay8 from '../../../assets/Submissions/WhereDoWeGoFromHere/Essay/changing_tides-jaya_sandhu.json'
 import essay9 from '../../../assets/Submissions/WhereDoWeGoFromHere/Essay/the_rebranding.json'
-import essay10 from'../../../assets/Submissions/WhereDoWeGoFromhere/Essay/inside_vs_outside-kimberly_cheung.json'
-import essay11 from'../../../assets/Submissions/WhereDoWeGoFromhere/Essay/three_days_out_of_a_thousand-max_manson.json'
+import essay10 from'../../../assets/Submissions/WhereDoWeGoFromHere/Essay/inside_vs_outside-kimberly_cheung.json'
+import essay11 from'../../../assets/Submissions/WhereDoWeGoFromHere/Essay/three_days_out_of_a_thousand-max_manson.json'
 import iframe2 from '../../../assets/Submissions/WhereDoWeGoFromHere/iFrame/sustainability_is_multifaceted-shuvi_jha.json'
 
 const WhereDoWeGoFromHere = () => {
