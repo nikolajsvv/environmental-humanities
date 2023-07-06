@@ -23,10 +23,16 @@ import image5 from '../../../assets/Images/WhereAreWe/forest_fire.webp'
 import image6 from '../../../assets/Images/WhereAreWe/trees.webp'
 import image7 from '../../../assets/Images/WhereAreWe/charleston.webp'
 import image8 from '../../../assets/Images/WhereAreWe/fall_leaves.webp'
+import { Helmet } from 'react-helmet';
+
 
 const WhereAreWe = () => {
   return(
     <section id='where-are-we' style={{marginBottom: '100px'}} className='pt-40'>
+      <Helmet>
+        <title>Changing Planet</title>
+        <meta name='description' content='Explore the "Where Are We" section of our website, where we offer a unique blend of images, essays, and poems exploring our shared existence. Dive into thoughtful essays, awe-inspiring imagery, and evocative poems that ponder the question, "Where are we?"'/>
+      </Helmet>
       <div className="px-8 mx-auto xl:px-5 max-w-screen-2xl py-3 lg:py-4">
         <SectionTitle sectionContent={introduction}/>
       </div>

@@ -21,7 +21,7 @@ const EssayFullView = ({ content, onClose }) => {
             <XMarkIcon className='fixed h-10 w-10 bg-gray-100 rounded-full hover:text-primary-orange hover:bg-opacity-50 transition-all duration-300' />
           </button>
           <object data={url} type="application/pdf" className='w-full h-full'>
-            <iframe src='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf'>
+            <iframe src='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf' loading='lazy'>
               <p className='text-white text-lg'>This browser does not support PDF.</p>
             </iframe>
           </object>

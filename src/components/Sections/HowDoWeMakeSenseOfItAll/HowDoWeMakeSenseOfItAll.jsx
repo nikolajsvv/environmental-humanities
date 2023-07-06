@@ -28,10 +28,15 @@ import backgroundImage7 from '../../../assets/Images/HowDoWeMakeSenseOfItAll/yos
 import backgroundImage8 from '../../../assets/Images/HowDoWeMakeSenseOfItAll/child_in_nature.webp'
 import backgroundImage9 from '../../../assets/Images/HowDoWeMakeSenseOfItAll/pollution.webp'
 import backgroundImage10 from '../../../assets/Images/HowDoWeMakeSenseOfItAll/tree_on_fire.webp'
+import { Helmet } from 'react-helmet';
 
 const HowDoWeMakeSenseOfItAll = () => {
   return (
     <section id='how-do-we-make-sense-of-it-all' style={{marginBottom: '100px'}} className='pt-40'>
+      <Helmet>
+        <title>Changing Planet</title>
+        <meta name='description' content='Explore "How Do We Make Sense of It All," a curated collection of poems, essays, audios, and videos. This diverse selection seeks to express the intricate tapestry of human experiences and our attempts to understand the world. Expect a deep dive into environmental issues, personal identity, societal interactions, and more.'/>
+      </Helmet>
       <div className="px-8 mx-auto xl:px-5 max-w-screen-2xl py-3 lg:py-4">
         <SectionTitle sectionContent={intro}/>
       </div>
