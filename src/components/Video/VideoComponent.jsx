@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { VideoCameraIcon } from '@heroicons/react/24/outline';
 import { motion } from 'framer-motion';
 
-
 const VideoComponent = ({content, backgroundImage}) => {
 
   const url = new URL(content.url);
