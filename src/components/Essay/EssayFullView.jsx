@@ -18,7 +18,7 @@ const EssayFullView = ({ content, onClose }) => {
       <>
         <motion.div className='w-10/12 h-screen hidden md:inline cursor-default pt-20 overflow-auto relative  items-center'>
           <button className="absolute top-0 right-0 p-2 cursor-pointer" onClick={onClose}>
-            <XMarkIcon className='fixed h-10 w-10 bg-gray-100 rounded-full hover:text-primary-orange hover:bg-opacity-50' />
+            <XMarkIcon className='fixed h-10 w-10 bg-gray-100 rounded-full hover:text-primary-orange hover:bg-opacity-50 transition-all duration-300' />
           </button>
           <object data={url} type="application/pdf" className='w-full h-full'>
             <iframe src='https://pdfjs-express.s3-us-west-2.amazonaws.com/docs/choosing-a-pdf-viewer.pdf'>
@@ -28,7 +28,7 @@ const EssayFullView = ({ content, onClose }) => {
         </motion.div>
         <motion.div className='md:hidden'>
           <button className='absolute top-0 left-0 p-5 cursor-pointer' onClick={onClose}>
-            <ArrowLeftIcon className='fixed h-8 w-8 text-white hover:text-primary-orange'/>
+            <ArrowLeftIcon className='fixed h-8 w-8 hover:text-primary-orange transition-all duration-300'/>
           </button>
           <a href={url} target="_blank" rel="noopener noreferrer">
             <button className=''>
@@ -57,7 +57,7 @@ const EssayFullView = ({ content, onClose }) => {
       
       <motion.div className='md:hidden fixed top-0 left-0 w-screen h-screen bg-light-beige overflow-auto'>
         <button className='absolute top-0 left-0 p-5 cursor-pointer' onClick={onClose}>
-          <ArrowLeftIcon className='fixed h-8 w-8'/>
+          <ArrowLeftIcon className='fixed h-8 w-8 hover:text-primary-orange transition-all duration-300'/>
         </button>
         <div className='p-5 mt-12'>
           <p className='text-lg font-source-serif-pro text-primary-orange'>{author}</p>
@@ -71,6 +71,8 @@ const EssayFullView = ({ content, onClose }) => {
   );
 }
 
+export default EssayFullView;
+
 EssayFullView.propTypes = {
   content: PropTypes.shape({
     id: PropTypes.string,
@@ -82,5 +84,3 @@ EssayFullView.propTypes = {
   }).isRequired,
   onClose: PropTypes.func.isRequired,
 }
-
-export default EssayFullView;

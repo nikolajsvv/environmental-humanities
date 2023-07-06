@@ -4,23 +4,20 @@ import { useState } from 'react';
 import { PhotoIcon } from '@heroicons/react/24/outline';
 import { motion, AnimatePresence } from 'framer-motion';
 
-
 const ImageComponent = ({ content, backgroundImage }) => {
 
   const { title, author, description } = content;
-
   const [ showFullView, setShowFullView ] = useState(false);
-
   const handleViewClick = () => {
     setShowFullView(!showFullView);
-  }
+  };
 
   return (
     <>
-      <div className="group relative w-full pb-[75%] overflow-hidden cursor-pointer rounded-2xl" onClick={handleViewClick}>
+      <div className="group relative w-full pb-[75%] overflow-hidden cursor-pointer rounded-2xl shadow-md" onClick={handleViewClick}>
         <motion.div style={{ backgroundImage: `url(${backgroundImage})` }} className='absolute inset-0 bg-no-repeat bg-center bg-cover rounded-2xl transform transition-transform duration-500 group-hover:scale-105'/>
         <div className='absolute inset-0 bg-mud opacity-40 rounded-2xl group-hover:opacity-20 transition-opacity duration-500' />
-
+        
         <div className='absolute top-0 left-0 p-4 text-gray-300 flex items-center'>
             <PhotoIcon className='h-6 w-6 md:h-8 md:w-8 group-hover:scale-110 group-hover:text-gray-300' />
         </div>

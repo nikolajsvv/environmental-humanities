@@ -32,7 +32,7 @@ const PoemFullView = ({ content, onClose }) => {
 
       <motion.div className='md:hidden fixed top-0 left-0 w-screen h-screen bg-light-beige overflow-auto'>
         <button className='absolute top-0 left-0 p-5 cursor-pointer' onClick={onClose}>
-          <ArrowLeftIcon className='fixed h-8 w-8'/>
+          <ArrowLeftIcon className='fixed h-8 w-8 hover:text-primary-orange transition-all duration-300'/>
         </button>
         <div className='p-5 mt-12'>
           <p className='text-lg font-source-sans-pro text-primary-orange'>{author}</p>

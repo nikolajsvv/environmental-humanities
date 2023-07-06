@@ -20,6 +20,8 @@ const EssayComponent = ({ content, backgroundImage }) => {
                     ? body 
                     : body.substring(0, maxBodyLength) + '...';
 
+  const formattedBody = truncatedBody.replace(/\n/g, "<br/>").replace(/<strike>/g, "<strike><br/>");
+
   useEffect(() => {
     const handleResize = () => {
       const divWidth = divRef.current.offsetWidth;
@@ -43,6 +45,8 @@ const EssayComponent = ({ content, backgroundImage }) => {
     };
   }, []);
 
+
+
   return (
     <>
       <motion.div className='group relative w-full pb-[75%] overflow-hidden rounded-2xl shadow-md shadow-mud' ref={divRef}
@@ -64,7 +68,7 @@ const EssayComponent = ({ content, backgroundImage }) => {
           </h2>
           <p className='font-source-sans-pro font-normal text-light-orange'>{author}</p>
           <p className='py-2 font-extralight font-source-serif-pro text-sm lg:text-base'
-            dangerouslySetInnerHTML={{ __html: truncatedBody.replace(/\n/g, '<br/>')}}>
+            dangerouslySetInnerHTML={{ __html: formattedBody }}>
           </p>
           <p className='text-base sm:text-md text-right cursor-pointer font-semibold hover:font-bold hover:text-light-orange ' onClick={handleViewClick}>Read More</p>
         </div>
