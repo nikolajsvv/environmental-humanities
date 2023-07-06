@@ -15,7 +15,12 @@ const ImageComponent = ({ content, backgroundImage }) => {
   return (
     <>
       <div className="group relative w-full pb-[75%] overflow-hidden cursor-pointer rounded-2xl shadow-md" onClick={handleViewClick}>
-        <motion.div style={{ backgroundImage: `url(${backgroundImage})` }} className='absolute inset-0 bg-no-repeat bg-center bg-cover rounded-2xl transform transition-transform duration-500 group-hover:scale-105'/>
+        <motion.img
+            src={backgroundImage} 
+            alt={title} 
+            loading="lazy" 
+            className='absolute inset-0 object-cover w-full h-full rounded-2xl transform transition-transform duration-500 group-hover:scale-105'
+        />        
         <div className='absolute inset-0 bg-mud opacity-40 rounded-2xl group-hover:opacity-20 transition-opacity duration-500' />
         
         <div className='absolute top-0 left-0 p-4 text-gray-300 flex items-center'>

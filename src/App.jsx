@@ -8,7 +8,7 @@ import WhereDoWeGoFromHere from './components/Sections/WhereDoWeGoFromHere/Where
 import HowDoWeMakeSenseOfItAll from './components/Sections/HowDoWeMakeSenseOfItAll/HowDoWeMakeSenseOfItAll'
 
 const App = () => {
-  
+
   return (
     <>
     <NavBar/>

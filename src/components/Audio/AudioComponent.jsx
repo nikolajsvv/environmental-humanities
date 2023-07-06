@@ -85,7 +85,12 @@ const AudioComponent = ({ audioFile, content, backgroundImage  }) => {
       >
       <audio src={audioFile} ref={audioPlayerRef}/>
 
-      <motion.div style={{ backgroundImage: `url(${backgroundImage})` }} className='absolute inset-0 bg-no-repeat bg-center bg-cover rounded-2xl'/>
+      <motion.img
+            src={backgroundImage} 
+            alt={title} 
+            loading="lazy" 
+            className='absolute inset-0 object-cover w-full h-full rounded-2xl transform transition-transform duration-500 group-hover:scale-105'
+        />      
       <div className='absolute inset-0 bg-black opacity-50 rounded-2xl'/>
 
       <div className='absolute top-0 left-0 p-4 text-gray-400 flex items-center'>
