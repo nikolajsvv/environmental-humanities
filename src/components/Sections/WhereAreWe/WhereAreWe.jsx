@@ -4,7 +4,7 @@ import ImageComponent from "../../Image/ImageComponent"
 import PoemComponent from "../../Poem/PoemComponent"
 import introduction from '../../../assets/Submissions/WhereAreWe/intro.json'
 import imageSubmissionContent1 from '../../../assets/Submissions/WhereAreWe/Images/current_state-jj_jean_noland_murphy.json'
-import imageSubmission1 from '../../../assets/Submissions/WhereAreWe/Images/current_state-jj_jean_noland_murphy.jpg'
+import imageSubmission1 from '../../../assets/Submissions/WhereAreWe/Images/current_state-jj_jean_noland_murphy.webp'
 import essay1 from '../../../assets/Submissions/WhereAreWe/Essay/lily-alice_wang.json'
 import essay2 from '../../../assets/Submissions/WhereAreWe/Essay/where_the_wild_things_are_and_where_they_arent-jason_bloom.json'
 import essay3 from '../../../assets/Submissions/WhereAreWe/Essay/a_reflection on_natures_splendor-george_robert_dimopoulos.json'
@@ -15,14 +15,14 @@ import essay7 from '../../../assets/Submissions/WhereAreWe/Essay/grappling_with_
 import poem1 from '../../../assets/Submissions/WhereAreWe/Poem/the_linden-divya_mehrish.json'
 import poem2 from '../../../assets/Submissions/WhereAreWe/Poem/a_city_underwater-brianna_gamble.json'
 import poem3 from '../../../assets/Submissions/WhereAreWe/Poem/burning-patricia_gerli.json'
-import image1 from '../../../assets/water_lily.jpg'
-import image2 from '../../../assets/Images/WhereAreWe/surfing.jpg'
-import image3 from '../../../assets/Images/WhereAreWe/fishing.jpg'
-import image4 from '../../../assets/Images/WhereAreWe/sprouting_plant.jpg'
-import image5 from '../../../assets/Images/WhereAreWe/forest_fire.jpg'
-import image6 from '../../../assets/Images/WhereAreWe/trees.jpg'
-import image7 from '../../../assets/Images/WhereAreWe/charleston.jpg'
-import image8 from '../../../assets/Images/WhereAreWe/fall_leaves.jpg'
+import image1 from '../../../assets/Images/WhereAreWe/water_lily.webp'
+import image2 from '../../../assets/Images/WhereAreWe/surfing.webp'
+import image3 from '../../../assets/Images/WhereAreWe/fishing.webp'
+import image4 from '../../../assets/Images/WhereAreWe/sprouting_plant.webp'
+import image5 from '../../../assets/Images/WhereAreWe/forest_fire.webp'
+import image6 from '../../../assets/Images/WhereAreWe/trees.webp'
+import image7 from '../../../assets/Images/WhereAreWe/charleston.webp'
+import image8 from '../../../assets/Images/WhereAreWe/fall_leaves.webp'
 
 const WhereAreWe = () => {
   return(
