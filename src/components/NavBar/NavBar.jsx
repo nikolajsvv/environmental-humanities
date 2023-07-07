@@ -1,3 +1,4 @@
+import StanfordBanner from '../Banner/StanfordBanner';
 import useMenuAnimation from './useMenuAnimation';
 import MenuToggle from './MenuToggle';
 import Menu from './Menu';
@@ -56,9 +57,12 @@ const NavBar = () => {
 
   const currentSectionTitle = currentSection !== 'launch' ? sections.find(section => section.id === currentSection)?.title : '';
 
+  const isLightBeigeBg = currentSection !== 'launch';
+
   return (
     <>
-      <div ref={scope} className='flex fixed z-50 w-full bg-light-beige h-16 justify-center items-center'>
+      <StanfordBanner />
+      <div ref={scope} className={`flex fixed z-50 w-full h-16 justify-center items-center p-4 ${isLightBeigeBg ? 'bg-light-beige' : ''}`}>
         <Menu setIsOpen={setIsOpen} sections={sections}/>
         <MenuToggle toggle={() => setIsOpen(!isOpen)}/>
         <div className='text-center text-lg pl-12 sm:pl-0 text-dark-green font-bold uppercase sm:text-2xl md:text-3xl lg:text-4xl'>

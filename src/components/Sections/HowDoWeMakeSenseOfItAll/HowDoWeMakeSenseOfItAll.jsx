@@ -32,7 +32,7 @@ import { Helmet } from 'react-helmet';
 
 const HowDoWeMakeSenseOfItAll = () => {
   return (
-    <section id='how-do-we-make-sense-of-it-all' style={{marginBottom: '100px'}} className='pt-40'>
+    <section id='how-do-we-make-sense-of-it-all' style={{marginBottom: '300px'}} className='pt-40'>
       <Helmet>
         <title>Changing Planet</title>
         <meta name='description' content='Explore "How Do We Make Sense of It All," a curated collection of poems, essays, audios, and videos. This diverse selection seeks to express the intricate tapestry of human experiences and our attempts to understand the world. Expect a deep dive into environmental issues, personal identity, societal interactions, and more.'/>
