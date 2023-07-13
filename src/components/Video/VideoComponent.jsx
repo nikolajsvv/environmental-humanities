@@ -9,7 +9,6 @@ const VideoComponent = ({content, backgroundImage}) => {
   const embedUrl = `https://www.youtube.com/embed/${video_id}`;
 
   return (
-
     <motion.div className="group relative w-full pb-[75%] overflow-hidden rounded-2xl shadow-md shadow-mud" 
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1}}
@@ -21,7 +20,7 @@ const VideoComponent = ({content, backgroundImage}) => {
       <div className='absolute top-0 left-0 p-4 text-gray-400 flex items-center'>
         <VideoCameraIcon className='h-6 w-6 md:h-8 md:w-8 group-hover:scale-110 group-hover:text-gray-300' />
       </div>
-      <iframe width='100%' height='100%' src={embedUrl} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen className='absolute inset-0'></iframe>
+      <iframe width="100%" height="100%" src={embedUrl} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen className='absolute inset-0'></iframe>
     </motion.div>
 
   )
