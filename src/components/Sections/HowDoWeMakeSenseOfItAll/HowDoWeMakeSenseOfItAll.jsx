@@ -3,7 +3,6 @@ import PoemComponent from "../../Poem/PoemComponent"
 import EssayComponent from '../../Essay/EssayComponent'
 import AudioComponent from "../../Audio/AudioComponent"
 import VideoComponent from "../../Video/VideoComponent"
-import Blank from '../../Blank/Blank'
 import intro from '../../../assets/Submissions/HowDoWeMakeSenseOfItAll/intro.json'
 import poem1 from '../../../assets/Submissions/HowDoWeMakeSenseOfItAll/Poem/just_in_time-acacia_j_lynch.json'
 import poem2 from '../../../assets/Submissions/HowDoWeMakeSenseOfItAll/Poem/where_do_we_store_our_hope-sarah_crable.json'
@@ -60,9 +59,6 @@ const HowDoWeMakeSenseOfItAll = () => {
           <div className="lg:row-span-2 lg:col-span-2">
             <PoemComponent content={poem4} backgroundImage={backgroundImage9}/>
           </div>
-          <Blank/>
-          <Blank/>
-          <Blank/>
           <div className="lg:row-span-2 lg:col-span-2">
             <PoemComponent content={poem5} backgroundImage={backgroundImage10}/>
           </div>
