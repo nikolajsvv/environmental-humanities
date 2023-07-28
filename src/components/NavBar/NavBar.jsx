@@ -7,7 +7,11 @@ import { motion, useScroll } from 'framer-motion';
 
 const NavBar = () => {
   const sections = [
-    { title: '', id: 'launch' }, // Add this
+    { title: '', id: 'launch' }, 
+    { title: '', id: 'about-1' }, 
+    { title: '', id: 'about-2' }, 
+    { title: '', id: "about-3" },
+    { title: '', id: "about-4" },
     { title: 'where are we', id: 'where-are-we' },
     { title: 'how did we get here', id: 'how-did-we-get-here' },
     { title: 'where do we go from here', id: 'where-do-we-go-from-here' },
@@ -55,7 +59,7 @@ const NavBar = () => {
       };
   }, [elements]);
 
-  const currentSectionTitle = currentSection !== 'launch' ? sections.find(section => section.id === currentSection)?.title : '';
+  const currentSectionTitle = currentSection !== 'launch' && currentSection !== 'about-1' && currentSection !== 'about-2' && currentSection !== 'about-3' ? sections.find(section => section.id === currentSection)?.title : '';
 
   const isLightBeigeBg = currentSection !== 'launch';
 
