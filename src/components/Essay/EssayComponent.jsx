@@ -45,8 +45,6 @@ const EssayComponent = ({ content, backgroundImage }) => {
     };
   }, []);
 
-
-
   return (
     <>
       <motion.div className='group relative w-full pb-[75%] overflow-hidden rounded-2xl shadow-md shadow-mud' ref={divRef}

@@ -1,6 +1,7 @@
 
 import './styles/App.css'
 import NavBar from './components/NavBar/NavBar'
+import About from './components/Sections/About/About'
 import Launch from './components/Sections/Launch/Launch'
 import StanfordFooter from './components/Footer/StanfordFooter'
 import HowDidWeGetHere from './components/Sections/HowDidWeGetHere/HowDidWeGetHere'
@@ -14,6 +15,7 @@ const App = () => {
     <>
     <NavBar/>
     <Launch/>
+    <About/>
     <WhereAreWe />
     <HowDidWeGetHere />
     <WhereDoWeGoFromHere />
