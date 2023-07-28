@@ -60,7 +60,6 @@ const NavBar = () => {
   }, [elements]);
 
   const currentSectionTitle = currentSection !== 'launch' && currentSection !== 'about-1' && currentSection !== 'about-2' && currentSection !== 'about-3' ? sections.find(section => section.id === currentSection)?.title : '';
-
   const isLightBeigeBg = currentSection !== 'launch';
 
   return (
