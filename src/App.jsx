@@ -7,11 +7,11 @@ import content4 from './assets/Submissions/About/section_4.json'
 import NavBar from './components/NavBar/NavBar'
 import About from './components/Sections/About/About'
 import Launch from './components/Sections/Launch/Launch'
-import StanfordFooter from './components/Footer/StanfordFooter'
 import HowDidWeGetHere from './components/Sections/HowDidWeGetHere/HowDidWeGetHere'
 import WhereAreWe from './components/Sections/WhereAreWe/WhereAreWe'
 import WhereDoWeGoFromHere from './components/Sections/WhereDoWeGoFromHere/WhereDoWeGoFromHere'
 import HowDoWeMakeSenseOfItAll from './components/Sections/HowDoWeMakeSenseOfItAll/HowDoWeMakeSenseOfItAll'
+// import StanfordFooter from './components/Footer/StanfordFooter'
 
 const App = () => {
 
@@ -27,7 +27,7 @@ const App = () => {
     <HowDidWeGetHere />
     <WhereDoWeGoFromHere />
     <HowDoWeMakeSenseOfItAll />
-    <StanfordFooter />
+    {/* <StanfordFooter /> */}
     </>
   )
 }

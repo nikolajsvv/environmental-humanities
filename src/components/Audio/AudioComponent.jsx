@@ -98,8 +98,8 @@ const AudioComponent = ({ audioFile, content, backgroundImage  }) => {
       </div>
 
       <div className='absolute inset-0 items-center justify-center text-light-beige p-5 flex flex-col space-y-2 overflow-y-auto'>
-        <h2 className='uppercase font-source-sans-pro font-bold text-4xl text-center'>{title}</h2>
-        <p className='text-light-orange'>{author}</p>
+        <h2 className='uppercase font-source-sans-pro font-bold text-xl sm:text-2xl lg:text-4xl text-center'>{title}</h2>
+        <p className='text-light-orange text-sm md:text-md'>{author}</p>
         <div>
           {!isPlaying ? (
             <PlayCircleIcon
