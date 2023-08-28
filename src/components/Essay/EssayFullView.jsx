@@ -28,7 +28,7 @@ const EssayFullView = ({ content, onClose }) => {
         </motion.div>
         <motion.div className='md:hidden'>
           <button className='absolute top-0 left-0 p-5 cursor-pointer' onClick={onClose}>
-            <ArrowLeftIcon className='fixed h-8 w-8 hover:text-primary-orange transition-all duration-300'/>
+            <ArrowLeftIcon className='fixed h-8 w-8 text-white hover:text-primary-orange transition-all duration-300'/>
           </button>
           <a href={url} target="_blank" rel="noopener noreferrer">
             <button className=''>

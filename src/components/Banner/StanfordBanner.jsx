@@ -2,9 +2,9 @@ import '../../styles/decanter/decanter.css';
 
 const StanfordBanner = () => {
   return (
-    <section className="su-brand-bar">
-      <div className="su-brand-bar__container">
-        <a className="su-brand-bar__logo" href="https://stanford.edu">Stanford University</a>
+    <section className="absolute z-50 top-0 left-0 w-full h-[30px] bg-[#2e2d29] text-white">
+      <div className="ml-20">
+        <a className="su-brand-bar__logo cursor-pointer" href="https://stanford.edu">Stanford University</a>
       </div>
     </section>
   );
