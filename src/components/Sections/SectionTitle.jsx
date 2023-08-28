@@ -17,7 +17,7 @@ const SectionTitle = ({ sectionContent }) => {
     >    
       <div className='flex flex-col items-start'>
         <h3 className='text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-light-beige font-bold p-10 sm:p-20 pl-10 lg:pl-20 transition duration-300 relative'>{title}
-          <span className="hidden lg:inline line absolute bottom-5 sm:bottom-2 md:bottom-10 -left-96 border-t-2 border-light-beige w-96 group-hover:w-[calc(160%)] group-hover:sm:w-[calc(140%)] transition-all duration-300"></span>
+          <span className="hidden lg:inline line absolute bottom-5 sm:bottom-2 md:bottom-10 -left-96 border-t-2 border-light-beige w-96 group-hover:w-[calc(140%)] transition-all duration-300"></span>
         </h3>
       </div>
 
