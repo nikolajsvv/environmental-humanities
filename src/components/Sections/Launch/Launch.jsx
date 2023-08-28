@@ -29,7 +29,7 @@ const Launch = () => {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}>Stanford students exploring the roots of unsustainability – and imagining a better future</motion.h2>
       </motion.div>
-      <p className='text-dark-green text-xs font-extralight absolute bottom-0 right-0 p-5'>
+      <p className='text-mud text-xs font-extralight absolute bottom-0 right-0 p-5'>
         {`This website showcases student perspectives from Stanford University's Fall 2022 course: "Environmental Humanities: Finding Our Place on a Changing Planet” [SUSTAIN 140 | BIO 184 | ENGLISH 140D]`}
       </p>    
 </motion.section>

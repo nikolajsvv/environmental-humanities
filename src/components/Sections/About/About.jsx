@@ -13,11 +13,11 @@ const About = ({content, id}) => {
 
   return (
     <section id={id} className="flex items-center">
-      <div ref={targetRef} className="h-[300vh] w-full mb-22 px-28">
+      <div ref={targetRef} className="h-[300vh] w-full mb-22 px-5 lg:px-28">
         <div className='sticky top-1/2 transform -translate-y-1/2'>
           <div className="flex justify-center">
             <motion.div style={{opacity}} className="origin-top">
-              <h2 className="text-3xl font-source-sans-pro">{content.content}</h2>
+              <h2 className="text-lg md:text-xl lg:text-3xl font-source-sans-pro">{content.content}</h2>
             </motion.div>
           </div>
         </div>
