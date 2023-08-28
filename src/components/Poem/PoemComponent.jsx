@@ -26,13 +26,15 @@ const PoemComponent = ({ content, backgroundImage }) => {
         <div className='absolute inset-0 bg-black opacity-50 rounded-2xl' />
 
         <div className='absolute top-0 left-0 p-4 text-gray-400 flex items-center'>
-          <PencilIcon className='h-6 w-6 md:h-8 md:w-8 group-hover:scale-110 group-hover:text-gray-300' />
+          <div className='h-6 w-6 md:h-8 md:w-8 group-hover:scale-110 group-hover:text-gray-300'>
+            <PencilIcon className='w-full h-full' />
+          </div>
         </div>
 
-        <div className='absolute inset-0 items-center justify-center text-light-beige p-5 flex flex-col'>
-          <h2 className='text-xl font-source-sans-pro font-bold uppercase sm:text-2xl lg:text-4xl'>{title}</h2>
+        <div className='absolute inset-0 items-center justify-center text-light-beige p-5 flex flex-col' id='content'>
+          <h2 className='text-xl font-source-sans-pro font-bold uppercase sm:text-2xl lg:text-4xl text-center'>{title}</h2>
           <p className='text-sm font-source-sans pb-1 sm:text-md lg:text-lg lg:pb-5 text-light-orange'>{author}</p>
-          <p className="text-sm font-source-serif-pro font-light text-center overflow-y-scroll sm:text-md lg:text-lg w-full" dangerouslySetInnerHTML={{ __html: body.replace(/\n/g, '<br/>')}}></p>
+          <p className="text-sm font-source-serif-pro font-light text-center overflow-y-scroll sm:text-md lg:text-lg" dangerouslySetInnerHTML={{ __html: body.replace(/\n/g, '<br/>')}}></p>
           {description !== '' && (
             <p className='text-md font-source-sans-pro pt-5 font-semibold cursor-pointer lg:text-lg hover:text-light-orange hover:font-bold' onClick={handleViewClick}>Description</p>
           )}
