@@ -11,6 +11,7 @@ import poem4 from '../../../assets/Submissions/HowDoWeMakeSenseOfItAll/Poem/drea
 import poem5 from '../../../assets/Submissions/HowDoWeMakeSenseOfItAll/Poem/all_i_can_do-teddy_hickenlooper_jason_bloom.json'
 import essay1 from '../../../assets/Submissions/HowDoWeMakeSenseOfItAll/Essay/do_we_have_time_for_life_to_move_on-leilani_tian.json'
 import essay2 from '../../../assets/Submissions/HowDoWeMakeSenseOfItAll/Essay/google_earth-maya_harris.json'
+import essay3 from '../../../assets/Submissions/HowDoWeMakeSenseOfItAll/Essay/embracing_grief_and_hope-emily_summer_elliott.json'
 import audioContent1 from '../../../assets/Submissions/HowDoWeMakeSenseOfItAll/Audio/gratitude_and_compassion-eli_rimer.json'
 import audioFile1 from '../../../assets/Submissions/HowDoWeMakeSenseOfItAll/Audio/gratitude-eli_rimer.mp3'
 import audioFile2 from '../../../assets/Submissions/HowDoWeMakeSenseOfItAll/Audio/the_stanford_soundscape-maya_h_green.mp3'
@@ -51,6 +52,7 @@ const HowDoWeMakeSenseOfItAll = () => {
           </div>
           <AudioComponent audioFile={audioFile2} content={{ body: 'What do you bring with you on a walk around campus? Phone, keys, maybe a laptop if you’re headed to CoHo or Green. And AirPods, right? Beats? Headphones of some ilk. Something to listen to. Maybe it’s Doja Cat or J. Cole in your ears. Maybe Ella Fitzgerald. Maybe it’s 21 Savage or Bach’s cello concertos or Taylor Swift. You could choose a podcast: the news, influencer garble, self-help. An audiobook. Something, anything, to accompany you down Escondido, past Arrillaga, through Meyer Green.', title: 'The Stanford Soundscape', author: 'Maya H. Green', url: pdfDocument1}} backgroundImage={backgroundImage5}/>
           <EssayComponent content={essay2} backgroundImage={backgroundImage6}/>
+          <EssayComponent content={essay3} backgroundImage={backgroundImage6}/>
           <EssayComponent content={{body: 'For my final project, I wrote five short creative writing pieces that were inspired by some of my favorite hikes that I did during the quarter. My initial goal was to focus these writings on becoming indigenous to a place and spent considerable time after each hike to sit and reflect and write.', title: 'Final Project', author: 'Samuel Price', url: pdfDocument2}} backgroundImage={backgroundImage7}/>
           <div className="lg:row-span-2 lg:col-span-2">
             <PoemComponent content={poem3} backgroundImage={backgroundImage8}/>

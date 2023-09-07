@@ -11,7 +11,7 @@ const Description = () => {
   });
 
   return (
-    <motion.section className="p-5 md:p-10" ref={ref}>
+    <motion.section id='description' className="p-5 md:p-10" ref={ref}>
       <motion.div id='first-section' className="mb-20 pt-40 font-source-sans-pro flex flex-col md:flex-row items-center justify-center relative"
         initial={{opacity: 0}}
         animate={{opacity: inView ? 1 : 0}}

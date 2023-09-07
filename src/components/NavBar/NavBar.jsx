@@ -8,6 +8,7 @@ import { motion, useScroll } from 'framer-motion';
 const NavBar = () => {
   const sections = [
     { title: '', id: 'launch' }, 
+    { title: '', id: 'description' },
     { title: 'where are we', id: 'where-are-we' },
     { title: 'how did we get here', id: 'how-did-we-get-here' },
     { title: 'where do we go from here', id: 'where-do-we-go-from-here' },
