@@ -8,7 +8,6 @@ const Launch = () => {
     threshold: 0.9
   });
 
-
   return (
     <motion.section ref={ref} id='launch' className="relative w-screen h-screen flex flex-col justify-center items-center" >
       <div style={{backgroundImage: `linear-gradient(to bottom, rgba(58, 81, 52, .4), #fefae7), url(${bgImage})` }} className='absolute inset-0 bg-cover bg-no-repeat'/>
