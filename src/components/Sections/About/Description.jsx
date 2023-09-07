@@ -9,7 +9,7 @@ const Description = () => {
           {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
           <h2 className="relative z-10 text-lg sm:text-xl md:text-2xl lg:text-3xl text-center font-bold">Imagine you woke up tomorrow in a perfectly sustainable society</h2>
         </div>
-        <div className='w-full md:w-1/2 text-md sm:text-lg md:text-xl lg:text-2xl text-center space-y-4 md:space-y-6'>
+        <div className='w-full md:w-1/2 text-md sm:text-lg md:text-xl lg:text-2xl text-left space-y-4 md:space-y-6'>
             <p className='font-semibold'>What would this look like, and what would it have taken to get here?</p>
             <p className='font-semibold'>Would our work be complete – or is there a chance we could have missed the point?</p>
             <p className='font-semibold'>What does sustainability even mean?</p>

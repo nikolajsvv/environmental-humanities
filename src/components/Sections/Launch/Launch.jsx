@@ -5,8 +5,9 @@ import { useInView } from 'react-intersection-observer';
 const Launch = () => {
   
   const { ref, inView } = useInView({
-    threshold: 0.1
+    threshold: 0.9
   });
+
 
   return (
     <motion.section ref={ref} id='launch' className="relative w-screen h-screen flex flex-col justify-center items-center" >
@@ -26,13 +27,16 @@ const Launch = () => {
           transition={{ duration: 1, delay: 0.5 }}>PLANET</motion.h1>
         <motion.h2 className="text-mud text-xl lg:text-2xl xl:text-3xl font-source-serif-pro xl:-translate-y-12"
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 1 }}>Stanford students exploring the roots of unsustainability – and imagining a better future</motion.h2>
+          whileInView={{ opacity: inView ? 1 : 0}}
+          transition={{ duration: 1, delay: 0.8 }}>Stanford students exploring the roots of unsustainability – and imagining a better future</motion.h2>
       </motion.div>
-      <p className='text-mud text-xs font-extralight absolute bottom-0 right-0 p-5'>
+      <motion.p className='text-mud text-xs font-extralight absolute bottom-0 right-0 p-5' 
+        initial={{ opacity: 1 }}
+        animate={{ opacity: inView ? 1 : 0 }}
+        transition={{ duration: 1 }}>
         {`This website showcases student perspectives from Stanford University's Fall 2022 course: "Environmental Humanities: Finding Our Place on a Changing Planet” [SUSTAIN 140 | BIO 184 | ENGLISH 140D]`}
-      </p>    
-</motion.section>
+      </motion.p>    
+    </motion.section>
   )
 }
 export default Launch
