@@ -8,9 +8,17 @@ const ImageComponent = ({ content, backgroundImage }) => {
 
   const { title, author, description } = content;
   const [ showFullView, setShowFullView ] = useState(false);
+  const [isTruncated, setIsTruncated] = useState(true);
+
   const handleViewClick = () => {
     setShowFullView(!showFullView);
   };
+
+  const handleReadMoreClick = (e) => {
+    e.stopPropagation();
+    setIsTruncated(!isTruncated);
+  }
+  
 
   return (
     <>
@@ -28,9 +36,24 @@ const ImageComponent = ({ content, backgroundImage }) => {
         </div>
 
         <div className='absolute bottom-0 bg-light-beige bg-opacity-80 text-dark-green w-full p-4 rounded-b-2xl flex flex-col space-y-2 overflow-y-auto' >
-          <h2 className='text-3xl font-bold  font-source-sans-pro uppercase'>{title}</h2>
-          <p className='text-xl font-light font-source-serif-pro '>{author}</p>
-          {description ? description : ''}
+          <h2 className='text-md lg:text-3xl font-bold font-source-sans-pro uppercase'>{title}</h2>
+       
+          <p className='text-md lg:text-xl font-light font-source-serif-pro '>{author}</p>
+          {
+  description && isTruncated 
+  ? <>
+      <p className='text-xs sm:text-sm'>{description.substring(0, 100)}...</p>
+      <button onClick={handleReadMoreClick} className="text-base sm:text-md text-right cursor-pointer font-semibold hover:font-bold hover:text-light-orange">
+        Read More
+      </button>
+    </>
+  : <>
+      <p className='text-xs sm:text-sm'>{description}</p>
+      <button onClick={handleReadMoreClick} className="text-base sm:text-md text-right cursor-pointer font-semibold hover:font-bold hover:text-light-orange">
+        Close
+      </button>
+    </>
+}
         </div>
       </div>
 
