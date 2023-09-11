@@ -1,3 +1,4 @@
+import React  from 'react';
 import PropTypes from 'prop-types';
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { motion } from 'framer-motion'

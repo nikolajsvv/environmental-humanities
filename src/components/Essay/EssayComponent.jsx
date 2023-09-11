@@ -1,3 +1,4 @@
+import React  from 'react';
 import PropTypes from 'prop-types';
 import EssayFullView from './EssayFullView';
 import { useState, useEffect, useRef } from 'react';
@@ -75,7 +76,7 @@ const EssayComponent = ({ content, backgroundImage }) => {
           <p className='py-2 font-extralight font-source-serif-pro text-sm lg:text-base'
             dangerouslySetInnerHTML={{ __html: formattedBody }}>
           </p>
-          <p className='text-base sm:text-md text-right cursor-pointer font-semibold hover:font-bold hover:text-light-orange ' onClick={handleViewClick}>Read More</p>
+          <p className='text-base sm:text-md text-right cursor-pointer font-semibold hover:font-bold hover:text-light-orange' onClick={handleViewClick}>Read More</p>
         </div>
       </motion.div>
 
