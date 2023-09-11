@@ -1,3 +1,4 @@
+import React  from 'react';
 import PropTypes from 'prop-types';
 import { useEffect  } from 'react';
 import { XMarkIcon, ArrowLeftIcon } from '@heroicons/react/24/solid';

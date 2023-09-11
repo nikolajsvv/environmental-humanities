@@ -1,3 +1,4 @@
+import React  from 'react';
 import PropTypes from 'prop-types';
 import ImageFullView from './ImageFullView';
 import { useState } from 'react';
@@ -19,7 +20,6 @@ const ImageComponent = ({ content, backgroundImage }) => {
     setIsTruncated(!isTruncated);
   }
   
-
   return (
     <>
       <div className="group relative w-full pb-[75%] overflow-hidden cursor-pointer rounded-2xl shadow-md" onClick={handleViewClick}>
